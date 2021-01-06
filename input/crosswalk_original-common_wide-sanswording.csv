@@ -1,0 +1,45 @@
+﻿q_code_common,q_label,topic,y2006,y2007,y2008,y2009,y2010,y2011,y2012,y2013,y2014,y2015,y2016,y2017,y2018,y2019
+case_id,Respondent ID,NA,v1000,caseid,v100,v100,V100,V100,V101,caseid,V101,V101,V101,V101,caseid,caseid
+immig_legalize,Grant conditional legal status to undocumented,immigration,NA,CC12x_2,NA,NA,CC322_2,CC351_1,CC322_1,CC326_1,CC14_322_1,CC15_321_1,CC16_331_1,CC17_331_1,NA,CC19_322d
+immig_border,Increase border security between US-Mexico,immigration,NA,CC12x_4,NA,NA,CC322_4,CC351_2,CC322_2,CC326_2,CC14_322_2,CC15_321_2,CC16_331_2,CC17_331_2,CC18_322a,CC19_322e
+immig_police,Allow police questioning of suspected undocumented,immigration,NA,NA,NA,NA,CC322_5,CC351_3,CC322_3,CC326_3,CC14_322_3,CC15_321_3,NA,CC17_331_3,NA,NA
+immig_employer,Sanction employers hiring undocumented,immigration,NA,CC12x_1,NA,NA,CC322_1,NA,CC322_4,CC326_4,CC14_322_4,CC15_321_4,CC16_331_4,CC17_331_4,NA,NA
+immig_services,Prohibit services to immigrants,immigration,NA,NA,NA,NA,NA,NA,CC322_5,CC326_5,CC14_322_5,NA,NA,NA,NA,NA
+abortion_scale,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)",abortion,v3019,CC06_V3019,cc310,cc09_53,CC324,CC352,CC324,CC327,NA,NA,NA,NA,NA,NA
+abortion_always,Always allow abortion,abortion,NA,NA,NA,NA,NA,NA,NA,NA,CC14_323_1,CC15_322a,CC16_332a,CC17_332a,CC18_321a,CC19_321a
+abortion_conditional,Allow abortion only under certain cases,abortion,NA,NA,NA,NA,NA,NA,NA,NA,CC14_323_2,CC15_322b,CC16_332b,CC17_332b,CC18_321b,CC19_321b
+abortion_20weeks,Ban abortion after 20 weeks,abortion,NA,NA,NA,NA,NA,NA,NA,NA,CC14_323_3,CC15_322c,CC16_332c,CC17_332c,CC18_321c,CC19_321c
+abortion_coverage,Employer coverage of abortion,abortion,NA,NA,NA,NA,NA,NA,NA,NA,CC14_323_4,CC15_322d,CC16_332d,CC17_332d,CC18_321d,NA
+abortion_expenditures,Prohibit expenditures for abortion,abortion,NA,NA,NA,NA,NA,NA,NA,NA,CC14_323_5,CC15_322e,CC16_332e,CC17_332e,CC18_321e,CC19_321d
+abortion_prohibition,Total prohibition of abortion,abortion,NA,NA,NA,NA,NA,NA,NA,NA,NA,CC15_322f,CC16_332f,CC17_332f,CC18_321f,CC19_321e
+enviro_scale,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)",environment,v2092,CC06_V2092,NA,cc09_51,CC321,CC350,CC321,NA,NA,NA,NA,NA,NA,NA
+enviro_carbon,Allow EPA to regulate carbon dioxide emissions,environment,NA,NA,NA,NA,NA,NA,NA,NA,CC14_326_1,CC15_323_1,CC16_333a,CC17_333a,CC18_415a,CC19_340a
+enviro_35mpg,Raise fuel efficiency from 25 to 35 mpg,environment,NA,NA,NA,NA,NA,NA,NA,NA,CC14_326_2,CC15_323_2,CC16_333b,CC17_333b,CC18_415b,NA
+enviro_renewable,Require states use a minimum amount of renewable fuels,environment,NA,NA,NA,NA,NA,NA,NA,NA,CC14_326_3,CC15_323_3,CC16_333c,CC17_333c,CC18_415c,CC19_340b
+enviro_airwateracts,Strengthen EPA enforcement of Clean Air and Water acts,environment,NA,NA,NA,NA,NA,NA,NA,NA,CC14_326_4,CC15_323_4,CC16_333d,CC17_333d,CC18_415d,CC19_340c
+guns_scale,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)",guns,NA,NA,NA,NA,CC320,NA,CC320,NA,NA,NA,NA,NA,NA,NA
+guns_bgchecks,Background checks for guns for all sales,guns,NA,NA,NA,NA,NA,NA,NA,CC13_320a,CC14_320a,CC15_320a,CC16_330a,CC17_330a,CC18_320a,CC19_320a
+guns_names,Prohibit state and local publishing gun owner names,guns,NA,NA,NA,NA,NA,NA,NA,CC13_320b,CC14_320b,CC15_320b,CC16_330b,CC17_330b,NA,NA
+guns_assaultban,Ban assault rifles,guns,NA,NA,NA,NA,NA,NA,NA,CC13_320d,CC14_320d,CC15_320c,CC16_330d,CC17_330c,CC18_320c,CC19_320c
+guns_permits,Ease ability to obtain concealed-carry permits,guns,NA,NA,NA,NA,NA,NA,NA,CC13_320e,CC14_320e,CC15_320d,CC16_330e,CC17_330d,CC18_320d,CC19_320d
+spending_welfare,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)",spending,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,CC16_426_1,NA,CC18_426_1,NA
+spending_healthcare,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)",spending,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,CC16_426_2,NA,CC18_426_2,NA
+spending_education,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)",spending,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,CC16_426_3,NA,CC18_426_3,NA
+spending_police,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)",spending,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,CC16_426_4,NA,CC18_426_4,NA
+spending_infrastructure,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)",spending,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,CC16_426_5,NA,CC18_426_5,NA
+gaymarriage_scale,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)",miscellaneous,v2103,CC06_V2103,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+gaymarriage,Opposition to gay marriage,miscellaneous,NA,NA,cc316f,cc09_54,CC326,CC353,CC326,CC329,CC14_327,CC15_325,CC16_335,NA,NA,NA
+affirmativeaction_scale,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)",miscellaneous,v3027,CC06_V3027,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+affirmativeaction,"Opposition to affirmative action (1 = Support, 4 = Oppose)",miscellaneous,NA,NA,cc313,cc09_55,CC327,CC354,CC327,CC330,CC14_328,NA,NA,NA,NA,NA
+repealaca,Repeal the Affordable Care Act,miscellaneous,NA,NA,NA,NA,NA,NA,CC332G,CC332C,CC14_324_1,CC15_327A,CC16_351I,CC17_340A,CC18_327c,CC19_327d
+military_oil,Approve of military ensuring oil supply,military,v3029,CC06_V3029,cc418_1,NA,CC414_1,CC356_1,CC414_1,CC322_1,CC414_1,CC15_324_1,CC16_414_1,NA,NA,NA
+military_terroristcamp,Approve of military to destroy terrorist camp,military,v3030,CC06_V3030,cc418_2,NA,CC414_2,CC356_2,CC414_2,CC322_2,CC414_2,CC15_324_2,CC16_414_2,NA,NA,NA
+military_genocide,Approve of military to intervene in genocide or civil war,military,v3031,CC06_V3031,cc418_3,NA,CC414_3,CC356_3,CC414_3,CC322_3,CC414_3,CC15_324_3,CC16_414_3,NA,NA,NA
+military_democracy,Approve of military to assist in spread democracy,military,v3032,CC06_V3032,cc418_4,NA,CC414_4,CC356_4,CC414_4,CC322_4,CC414_4,CC15_324_4,CC16_414_4,NA,NA,NA
+military_protectallies,Approve of military to protect US allies under attack,military,v3033,CC06_V3033,cc418_5,NA,CC414_5,CC356_5,CC414_5,CC322_5,CC414_5,CC15_324_5,CC16_414_5,NA,NA,NA
+military_helpun,Approve of military to help the United Nations uphold international law,military,v3034,CC06_V3034,cc418_6,NA,CC414_6,CC356_6,CC414_6,CC322_6,CC414_6,CC15_324_6,CC16_414_6,NA,NA,NA
+spending_vs_tax,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)",spending,v4040,CC06_V4040,cc420,NA,CC415r,CC357,CC415r,CC13_323,CC415r,CC15_331,CC16_415r,CC17_343,NA,NA
+incometax_vs_salestax,Preference scale from 0 (increase income tax) to 100 (increase sales tax),miscellaneous,v4042,CC06_V4042,cc421,NA,CC416r,CC358,CC416r,CC13_324,CC416r,CC15_332,CC16_416r,CC17_344,NA,NA
+enviro_vs_jobs,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)",environment,v3022,CC06_V3022,cc311,NA,CC325,NA,CC325,CC328,NA,NA,NA,NA,NA,NA
+spending_cuts_most,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)",spending,v4044,CC06_V4044,cc309,NA,CC328,CC355a,CC328,CC13_331a,CC14_329a,CC15_333a,NA,CC17_345a,NA,NA
+spending_cuts_least,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)",spending,v4046,CC06_V4046,cc310a,NA,CC329,CC355b,CC329,CC13_331b,CC14_329b,CC15_333b,NA,CC17_345b,NA,NA
