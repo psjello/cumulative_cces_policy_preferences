@@ -254,7 +254,7 @@ cces$enviro_scale <- factor(
     "Immediate action",
     "Some action",
     "More research needed",
-    "Not action necessary",
+    "No action necessary",
     "Climate change not occurring"))
 ## `gaymarriage_scale`
 cces$gaymarriage_scale <- factor(

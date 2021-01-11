@@ -116,7 +116,15 @@ Each year, the Cooperative Congressional Election Study (CCES) asks respondents 
 The **CCES Cumulative Preferences** data set compiles various policy preference question items from CCES respondents from 2006 to 2019.  This represents an effort to track, rename, recode, and append together responses to 43 policy preference question items over time.  The resulting time series can also be combined with the [Cumulative CCES Common Content](https://doi.org/10.7910/DVN/II2DB6), which contains demographic and political information of each respondent.
 
 \bigskip
-This guide provides details on each policy preference question item, including the years where the question item appears in the survey, frequency tables for item, and it's unique, year-specific variable name and question wording.  Some question items are more consistently asked than others.  Additionally, some question wording varies slightly across time, with more extreme changes warranting a note at the end of each question item's section.
+This guide provides details on each policy preference question item, including the years where a question item appears in the survey, frequency tables for an item's response values, and an item's unique, year-specific variable name and question wording.  Some question wording varies slightly across time, with more extreme changes warranting a note at the end of each question item's section.  
+
+\bigskip
+Additionally, some item response values are shortened and/or slightly re-worded from their original values out of convenience.  For example: the fifth response option for the 2010 item `CC321` reads, "Global climate change is not occurring; this is not a real issue.", and is shortened to "Climate change not occurring" for the equivalent cumulative item `enviro_scale`.  When shortening and re-wording occurs, the original value wording is listed inside the item's respective question wording table.  
+
+\bigskip
+Users of the CCES Cumulative Preferences dataset are encouraged to reference this guide to examine details on any interested question item before use.
+
+
 
 
 
@@ -175,6 +183,8 @@ kable(
 
 ```{r results='asis', fig.width=6, fig.height=3, fig.cap="Density plots for question item", fig.align="center"}
 
+#ROTATE FOLLOWING TABLES (too wide)
+
 for(a in c("abortion","environment","guns","immigration","military","spending","miscellaneous") ){
 
   #New page break
@@ -229,6 +239,8 @@ for(a in c("abortion","environment","guns","immigration","military","spending","
         sapply(
           tabfreq[,2:ncol(tabfreq)], 
           function(x) format(x,big.mark=",",scientific=F,trim=T))
+      #First column name
+      names(tabfreq)[1] <- "Response"
   
       #PRINT Frequency table
       kable(
@@ -241,7 +253,7 @@ for(a in c("abortion","environment","guns","immigration","military","spending","
         linesep="",
         longtable=TRUE,
         escape=FALSE) %>% 
-        kable_styling(latex_options=c("HOLD_position","repeat_header","scale_down")) %>%
+        kable_styling(font_size=10,latex_options=c("HOLD_position","repeat_header")) %>%
         print()
     }else{
       #PRINT Density plot
