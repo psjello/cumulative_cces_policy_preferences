@@ -315,6 +315,16 @@ cces$spending_cuts_most <- factor(
 ####################################################################################################
 
 
+
+# Final aesthetic tweaks
+
+#Reordering
+cces <- cces %>% select(year,case_id,names(cces)[2:(ncol(cces)-1)])
+
+#Variable labels
+cces <- set_label(cces,c("Survey year","Case ID",wide$q_label[1:43]))
+
+
 # Export
 dat <- sjlabelled::as_label(cces) 
 write_dta(

@@ -1,0 +1,343 @@
+---
+title: "Guide to the CCES Cumulative Preferences"
+author: "Angelo Dagonel^[PhD student, Department of Government, Harvard University. Thanks to Shiro Kuriwaki, Stephen Ansolabehere and Brian Schaffner for their suggestions and guidance. Bug reports are welcome at the data set's [GitHub repository](https://github.com/psjello/cces_cumulative_preferences).]"
+date: "Guide last updated: `r Sys.Date()`"
+geometry: margin=3cm
+output:
+  pdf_document:
+    latex_engine: xelatex
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+indent: no
+mainfont: Arial
+classoption: 12pt
+header-includes: \usepackage{dcolumn}\usepackage{setspace}\singlespacing\usepackage{graphicx}\usepackage{caption}\captionsetup[table]{skip=10pt}\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black}
+documentclass: article
+---
+
+
+
+
+
+<!-- # Package and data loading, and option setting -->
+<!-- # -->
+<!-- # -->
+
+
+```{r, include = FALSE}
+
+rm(list=ls())
+
+library(readr)
+library(haven)
+library(sjlabelled)
+
+library(tidyr)
+library(dplyr)
+library(stringr)
+library(questionr)
+
+library(knitr)
+library(kableExtra)
+
+library(ggplot2)
+library(gridExtra)
+theme_plot <- function () { 
+  theme_linedraw(base_size=10) %+replace% 
+    theme( 
+      panel.grid.major=element_blank(),
+      panel.grid.minor=element_blank(),
+      strip.text=element_text(color="Black",size=10,margin=margin(0,0,8,0)),
+      strip.background=element_rect(fill=NA,color=NA),   
+      plot.title=element_text(size=10,margin=margin(0,0,10,0)),
+      axis.title.x=element_text(size=10,margin=margin(10,0,10,0)),
+      axis.title.y=element_text(size=10,angle=90,margin=margin(0,10,0,0)))
+}
+theme_set(theme_plot())
+
+wd <- "C:/Dagonel/projects/surveys/cces/cces_cumulative_preferences/"
+
+knitr::opts_chunk$set(echo=FALSE,comment="",warning=FALSE)
+```
+
+
+```{r, include = FALSE, cache = FALSE}
+
+#Cumulative common content
+cumulative <- read_dta(
+  "C:/Dagonel/projects/surveys/cces/input/cumulative/cumulative_2006_2019.dta") %>%
+  select(year, case_id, state, st, cd, county_fips, zipcode,
+         age, race, hispanic, gender,
+         marstat, educ, faminc,
+         pid3, newsint,
+         intent_rep, intent_rep_party,
+         voted_rep, voted_rep_party, voted_rep_chosen,
+         approval_rep, economy_retro,
+         weight, weight_cumulative)
+cumulative <- sjlabelled::as_label(cumulative)
+
+#Cumulative preferences
+preferences <- read_dta(paste0(wd,"output/cces_cumulative_preferences.dta"))
+preferences <- sjlabelled::as_label(preferences)
+
+#Merged
+cces <- left_join(cumulative,preferences)
+
+
+
+# Crosswalks
+wide_guide <- 
+  read.csv(
+    paste0(wd,"output/latex-guide_preferences-crosswalk_wide-sanswording.csv"),
+    stringsAsFactors=F)
+wide <- 
+  read.csv(
+    paste0(wd,"output/preferences-crosswalk_wide-withwording.csv"),
+    stringsAsFactors=F)
+long <- 
+  read.csv(
+    paste0(wd,"output/preferences-crosswalk_long-withwording.csv"),
+    stringsAsFactors=F)
+
+```
+
+
+
+
+
+<!-- # Introduction -->
+<!-- # -->
+<!-- # -->
+
+
+Each year, the Cooperative Congressional Election Study (CCES) asks respondents about their preferences on issues like abortion, immigration, the environment and more. However, variable names for question items often change from year to year.
+
+\medskip
+The **CCES Cumulative Preferences** data set compiles various policy preference question items from CCES respondents over time.  This represents an effort to track, rename, recode, and append together responses to 43 policy preference question items from individual CCES survey data sets ranging from 2006 to 2019.  The resulting time series is available in an 89 MB data set, `cces_cumulative_preferences.dta`.  Additionally, this data set can be combined with the [Cumulative CCES Common Content](https://doi.org/10.7910/DVN/II2DB6) which contains demographic and political information of each respondent.
+
+\medskip
+This guide provides details on each policy preference question item, including the years where a question item appears in the survey, frequency tables for an item's response values, and an item's unique, year-specific variable name and question wording.  
+
+
+# Usage warnings
+
+Some question wording varies slightly across time, with more extreme changes warranting a note at the end of each question item's section.  Further, some item response values are shortened and/or slightly re-worded from their original values out of convenience.  For example: the fifth response option for the 2010 item `CC321` reads, "Global climate change is not occurring; this is not a real issue.", and is shortened to "Climate change not occurring" for the equivalent cumulative item `enviro_scale`.  When shortening and re-wording occurs, the original value wording is listed inside the item's respective question wording table.  
+
+\medskip
+Users of the CCES Cumulative Preferences dataset are encouraged to reference this guide to examine details on any interested question item before use.
+
+
+
+
+
+
+
+<!-- Table of contents  -->
+<!-- # -->
+<!-- # -->
+
+
+\newpage
+
+\tableofcontents
+
+
+
+
+
+<!-- #  -->
+<!-- # -->
+<!-- # -->
+
+
+# Question item availability by survey year
+
+```{r results='asis'}
+
+tab <- wide_guide %>% select(q_code_common,matches("^y20.[0-9]$"))
+tab[,2:ncol(tab)] <- sapply(tab[,2:ncol(tab)],function(x) ifelse(is.na(x),"","$\\checkmark$"))
+
+kable(
+  tab,
+  format="latex",
+  align=c("l",rep("c",13)),
+  col.names=c("Common variable name",seq(2006,2019,1)),
+  linesep="",
+  booktabs=TRUE,
+  escape=FALSE) %>%
+  kable_styling(latex_options=c("scale_down","striped"))
+```
+
+
+
+
+
+<!-- Question items -->
+<!-- # -->
+<!-- # -->
+
+
+\newpage
+
+# Question items
+
+
+
+```{r results='asis', fig.width=6, fig.height=3, fig.cap="Density plots for question item", fig.align="center"}
+
+#ROTATE FOLLOWING TABLES (too wide)
+
+for(a in c("abortion","environment","guns","immigration","military","spending","miscellaneous") ){
+
+  #New page break
+  if(a!="abortion"){
+    cat("\\newpage")
+  }
+  
+  #PRINT Topic heading
+  topic <- paste0(toupper(substr(a,1,1)),substr(a,2,nchar(a)))
+  cat("\n##",topic,"\n")
+
+  vars <- wide_guide[wide_guide$topic==a,"q_code_common"]
+  vars <- vars[!is.na(vars)]
+  for(v in vars){
+    #Variable heading
+    cat("\n\n###",v)
+
+    #PRINT Label heading
+    v2 <- gsub("\\\\","",v)
+    label <- wide[wide$q_code_common==v2,"q_label"]
+    cat("\n",label)
+    
+
+    #Wording part 1
+    tabword_vars <- wide_guide[wide_guide$q_code_common==v,-c(1:3)]
+    tabword_wording <- wide[wide$q_code_common==v2,] %>% select(matches("^y20.[0-9]_wording$"))
+    tabword_vars <- tabword_vars[colSums(!is.na(tabword_vars))>0]
+    tabword_wording <- tabword_wording[colSums(!is.na(tabword_wording))>0]
+    tabword_years <- as.numeric(gsub("^y","",names(tabword_vars)))
+    tabword <-
+      data.frame(
+        year=tabword_years,
+        var=unlist(tabword_vars),
+        wording=unlist(tabword_wording),
+        stringsAsFactors=F)
+    row.names(tabword) <- NULL
+
+    #PRINT Years in data
+    cat("\n\nYears in data:",paste(tabword_years,collapse=", "))
+    
+    
+    #Frequency tables/Density plots
+    if(grepl("spending_vs_tax|incometax_vs_salestax",v2)==F){
+      #Frequency table
+      tabfreq <- as.data.frame.matrix(table(cces[[v2]],cces$year))
+      tabfreq <- tabfreq[,colSums(tabfreq!=0)>0]
+      tabfreq[[v]] <- row.names(tabfreq)
+      row.names(tabfreq) <- NULL
+      tabfreq <- tabfreq[,c(ncol(tabfreq),1:(ncol(tabfreq)-1))]
+      #Commas
+      tabfreq[,2:ncol(tabfreq)] <-
+        sapply(
+          tabfreq[,2:ncol(tabfreq)], 
+          function(x) format(x,big.mark=",",scientific=F,trim=T))
+      #First column name
+      names(tabfreq)[1] <- "Response"
+  
+      #PRINT Frequency table
+      kable(
+        tabfreq,
+        format="latex",
+        booktabs=TRUE,
+        align=paste(c("l",rep("c",(ncol(tabfreq)-1))),collapse=""),
+        # col.names=c("",tabword_years),
+        caption=paste0(v,": Frequency table"),
+        linesep="",
+        longtable=TRUE,
+        escape=FALSE) %>% 
+        kable_styling(font_size=10,latex_options=c("HOLD_position","repeat_header")) %>%
+        print()
+    }else{
+      #PRINT Density plot
+      cces_v <- cces[,c("year",v2)]
+      names(cces_v)[2] <- "var"
+      p <- cces_v %>% 
+        filter(year!=2009 & year!=2018 & year!=2019) %>% 
+        ggplot() + geom_density(aes(x=var)) + xlim(0,100) + 
+        facet_wrap(.~year,ncol=6) + 
+        labs(
+          title=paste0("Density plots for ",v2),
+          x="",y="Density")
+      print(p)
+    }
+    
+
+    #wording part 2
+    #PRINT Year-specific wording
+    cat("\n\n\nYear-specific variable names and wording")
+    kable(
+      tabword,
+      format="latex",
+      booktabs=TRUE,
+      caption=paste0(v,": Year-specific wording"),
+      col.names=c("Year","Variable","Question wording"),
+      linesep="",
+      longtable=TRUE,
+      escape=FALSE) %>% 
+      kable_styling(latex_options=c("HOLD_position","repeat_header")) %>%
+      column_spec(3,width="10cm") %>%
+      print()
+    
+    
+    #Variable-specific notes (if applicable)
+    if(v2=="affirmativeaction_scale"){
+      cat("\n*Note: In 2006 and 2007, this question includes a fourth response option, 'Not sure', which has been re-coded as 'NA' in this data set.*\n")
+    }else if(v2=="enviro_scale"){
+      cat("\n*Note: From 2010 onward, this question includes a fifth response option, 'Global climate change is not occurring'.*\n")
+    }else if(v2=="enviro_35mpg"){
+      cat("\n*Note: In 2018, question wording switches from 'Raise required fuel efficiency...from 25 mpg' to 'Lower the required fuel efficiency...from 35 mpg'.*\n")
+    }else if(v2=="gaymarriage"){
+      cat("\n*Note: In 2008, this question includes a third response option, 'Not sure', which has been re-coded as 'NA' in this data set.  Additionally, from 2012 onward, question wording switches from asking respondents about their support of banning gay marriage, to their support of gay marriage.*\n")
+    }else if(v2=="immig_border"){
+      cat("\n*Note: In 2018 alone, question wording includes 'building a wall between the U.S. and Mexico'.\n*")
+    }else if(v2=="spending_cuts_least"){
+      cat("\n*Note: In 2006 and 2007, this question includes a fourth response option, 'Borrow'.*\n") #, which has been re-coded as 'NA' in this data set
+    }else if(v2=="spending_cuts_most"){
+      cat("\n*Note: In 2006 and 2007, this question includes a fourth response option, 'Borrow'.*\n") #, which has been re-coded as 'NA' in this data set
+    }else if(v2=="repealaca"){
+      cat("\n*Note: In 2014 alone, question wording switches from asking respondents about their support for repealing the Affordable Care Act, to their support for the Act.*\n")
+    }else if(v2=="enviro_vs_jobs"){
+      cat("\n*Note: In 2006 and 2007, this question includes a sixth response option, 'Haven't thought much about this'.*\n")
+    }
+    
+  }
+}
+```
+
+
+
+ 
+
+
+
+
+
+```{r}
+#KNIT
+rmarkdown::render(
+  paste0(wd,'code/cces_cumulative_preferences_guide.Rmd'),
+  output_file=paste0(wd,'cces_cumulative_preferences_guide.pdf')
+  )
+```
+
+
+
+
+
+
+
+
+
+
+
