@@ -313,23 +313,13 @@ for(a in c("abortion","environment","guns","immigration","military","spending","
     
   }
 }
+
 ```
 
 
 
  
 
-
-
-
-
-```{r}
-#KNIT
-rmarkdown::render(
-  paste0(wd,'code/cces_cumulative_preferences_guide.Rmd'),
-  output_file=paste0(wd,'cces_cumulative_preferences_guide.pdf')
-  )
-```
 
 
 
