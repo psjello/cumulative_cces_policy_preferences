@@ -188,7 +188,7 @@ kable(
 
 #ROTATE FOLLOWING TABLES (too wide)
 
-for(a in c("abortion","environment","guns","immigration","military","spending","miscellaneous") ){
+for(a in c("abortion","environment","guns","immigration","military","spending","other") ){
 
   #New page break
   if(a!="abortion"){
