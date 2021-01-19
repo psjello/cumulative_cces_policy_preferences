@@ -1,6 +1,6 @@
 ---
 title: "Guide to the Cumulative CCES Policy Preferences"
-author: "Angelo Dagonel^[PhD student, Department of Government, Harvard University. Thanks to Shiro Kuriwaki, Stephen Ansolabehere and Brian Schaffner for their suggestions and guidance. Bug reports are welcome at the data set's [GitHub repository](https://github.com/psjello/cces_cumulative_preferences).]"
+author: "Angelo Dagonel^[PhD student, Department of Government, Harvard University. Thanks to Shiro Kuriwaki, Stephen Ansolabehere and Brian Schaffner for their suggestions and guidance. Bug reports are welcome at the data set's [GitHub repository](https://github.com/psjello/cumulative_cces_policy_preferences).]"
 date: "Guide last updated: `r Sys.Date()`"
 geometry: margin=3cm
 output:
