@@ -1,5 +1,5 @@
 ---
-title: "Guide to the CCES Cumulative Preferences"
+title: "Guide to the Cumulative CCES Policy Preferences"
 author: "Angelo Dagonel^[PhD student, Department of Government, Harvard University. Thanks to Shiro Kuriwaki, Stephen Ansolabehere and Brian Schaffner for their suggestions and guidance. Bug reports are welcome at the data set's [GitHub repository](https://github.com/psjello/cces_cumulative_preferences).]"
 date: "Guide last updated: `r Sys.Date()`"
 geometry: margin=3cm
@@ -56,7 +56,7 @@ theme_plot <- function () {
 }
 theme_set(theme_plot())
 
-wd <- "C:/Dagonel/projects/surveys/cces/cces_cumulative_preferences/"
+wd <- "C:/Dagonel/projects/surveys/cces/cumulative_cces_policy_preferences/"
 
 knitr::opts_chunk$set(echo=FALSE,comment="",warning=FALSE)
 ```
@@ -78,7 +78,7 @@ cumulative <- read_dta(
 cumulative <- sjlabelled::as_label(cumulative)
 
 #Cumulative preferences
-preferences <- read_dta(paste0(wd,"output/cces_cumulative_preferences.dta"))
+preferences <- read_dta(paste0(wd,"output/cumulative_cces_policy_preferences.dta"))
 preferences <- sjlabelled::as_label(preferences)
 
 #Merged
@@ -111,10 +111,13 @@ long <-
 <!-- # -->
 
 
+> Dagonel, Angelo, 2021, "Cumulative CCES Policy Preferences", \href{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OSXDQO}{\url{doi:10.7910/DVN/OSXDQO}}, Harvard Dataverse. 
+
+
 Each year, the Cooperative Congressional Election Study (CCES) asks respondents about their preferences on issues like abortion, immigration, the environment and more. However, variable names for question items often change from year to year.
 
 \medskip
-The **CCES Cumulative Preferences** data set compiles various policy preference question items from CCES respondents over time.  This represents an effort to track, rename, recode, and append together responses to 43 policy preference question items from individual CCES survey data sets ranging from 2006 to 2019.  The resulting time series is available in an 89 MB data set, `cces_cumulative_preferences.dta`.  Additionally, this data set can be combined with the [Cumulative CCES Common Content](https://doi.org/10.7910/DVN/II2DB6) which contains demographic and political information of each respondent.
+The **Cumulative CCES Policy Preferences** data set compiles various policy preference question items from CCES respondents over time.  This represents an effort to track, rename, recode, and append together responses to 43 policy preference question items from individual CCES survey data sets ranging from 2006 to 2019.  The resulting time series is [available](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OSXDQO) in an 89 MB data set, `cumulative_cces_policy_preferences.dta`.  Additionally, this data set can be combined with the [Cumulative CCES Common Content](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/II2DB6) which contains demographic and political information of each respondent.
 
 \medskip
 This guide provides details on each policy preference question item, including the years where a question item appears in the survey, frequency tables for an item's response values, and an item's unique, year-specific variable name and question wording.  
@@ -125,7 +128,7 @@ This guide provides details on each policy preference question item, including t
 Some question wording varies slightly across time, with more extreme changes warranting a note at the end of each question item's section.  Further, some item response values are shortened and/or slightly re-worded from their original values out of convenience.  For example: the fifth response option for the 2010 item `CC321` reads, "Global climate change is not occurring; this is not a real issue.", and is shortened to "Climate change not occurring" for the equivalent cumulative item `enviro_scale`.  When shortening and re-wording occurs, the original value wording is listed inside the item's respective question wording table.  
 
 \medskip
-Users of the CCES Cumulative Preferences dataset are encouraged to reference this guide to examine details on any interested question item before use.
+Users of the Cumulative CCES Policy Preferences dataset are encouraged to reference this guide to examine details on any interested question item before use.
 
 
 

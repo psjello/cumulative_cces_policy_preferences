@@ -37,7 +37,7 @@ library(stringr)
 # Preference item crosswalk (wide)
 wide <- 
   read.csv(
-    "cces_cumulative_preferences/output/preferences-crosswalk_wide-withwording.csv",
+    "cumulative_cces_policy_preferences/output/preferences-crosswalk_wide-withwording.csv",
     stringsAsFactors=F)
 
 
@@ -329,7 +329,7 @@ cces <- set_label(cces,c("Survey year","Case ID",wide$q_label[1:43]))
 dat <- sjlabelled::as_label(cces) 
 write_dta(
   dat,
-  paste0(wd,"cces_cumulative_preferences/output/cces_cumulative_preferences.dta"),
+  paste0(wd,"cumulative_cces_policy_preferences/output/cumulative_cces_policy_preferences.dta"),
   version=14)
 
 

@@ -3,7 +3,7 @@
 
 
 rm(list = ls())
-wd <- "C:/Dagonel/projects/surveys/cces/cces_cumulative_preferences/"
+wd <- "C:/Dagonel/projects/surveys/cces/cumulative_cces_policy_preferences/"
 
 library(tidyr)
 library(readr)
