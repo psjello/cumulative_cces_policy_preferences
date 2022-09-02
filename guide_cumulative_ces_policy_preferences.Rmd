@@ -1,0 +1,448 @@
+---
+title: \Large Guide to the Cumulative CES Policy Preferences
+author: "Angelo Dagonel^[PhD candidate, Department of Government, Harvard University. Thanks to Shiro Kuriwaki, Stephen Ansolabehere and Brian Schaffner for their suggestions and guidance. Please send questions and bug reports to: [dagonel@g.harvard.edu](dagonel@g.harvard.edu).]"
+date: "Guide last updated: `r Sys.Date()`"
+geometry: margin=3cm
+output:
+  pdf_document:
+    latex_engine: xelatex
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+indent: false
+mainfont: Arial
+classoption: 12pt
+header-includes: \usepackage{dcolumn}\usepackage{setspace}\singlespacing\usepackage{graphicx}\usepackage{caption}\captionsetup[table]{skip=10pt}\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black}
+documentclass: article
+---
+
+
+
+
+
+<!-- # Package and data loading, and option setting -->
+<!-- # -->
+<!-- # -->
+
+
+```{r, include = FALSE}
+
+rm(list=ls())
+
+library(tidyverse)
+library(haven)
+library(sjlabelled)
+
+library(knitr)
+library(kableExtra)
+
+library(ggplot2)
+library(gridExtra)
+theme_plot <- function () { 
+  theme_linedraw(base_size=10) %+replace% 
+    theme( 
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      strip.text = element_text(color = "Black", size = 10, margin = margin(0,0,8,0)),
+      strip.background = element_rect(fill = NA,color = NA),   
+      plot.title = element_text(size = 10, margin = margin(0,0,10,0)),
+      axis.title.x = element_text(size = 10, margin = margin(10,0,10,0)),
+      axis.title.y = element_text(size = 10, angle=90, margin = margin(0,10,0,0)))
+}
+theme_set(theme_plot())
+
+#Knitting options
+knitr::opts_chunk$set(echo = FALSE, comment = "", warning = FALSE)
+```
+
+
+```{r, include = FALSE, cache = FALSE}
+
+#Cumulative preferences
+ces <- read_dta("cumulative_ces_policy_preferences.dta")
+ces <- sjlabelled::as_label(ces)
+
+
+# Crosswalks
+wide_guide <- 
+  read.csv(
+    "output/latex-guide_preferences-crosswalk_wide-sanswording.csv",
+    stringsAsFactors=F)
+
+wide <- 
+  read.csv(
+    "output/preferences-crosswalk_wide-withwording.csv",
+    stringsAsFactors=F)
+
+long <- 
+  read.csv(
+    "output/preferences-crosswalk_long-withwording.csv",
+    stringsAsFactors=F)
+
+```
+
+
+
+
+
+<!-- # Introduction -->
+<!-- # -->
+<!-- # -->
+
+
+> Dagonel, Angelo, 2022, "Cumulative CES Policy Preferences", \href{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OSXDQO}{\url{doi:10.7910/DVN/OSXDQO}}, Harvard Dataverse, V2. 
+
+\bigskip
+
+Each year, the Cooperative Election Study (CES)^[Formerly the Cooperative Congressional Election Study (CCES).] asks respondents about their preferences on issues like abortion, immigration, the environment and more.
+However, variable names for question items often change from year to year.
+
+\medskip
+The **Cumulative CES Policy Preferences** data set compiles various policy preference question items from CES respondents over time.
+This represents an effort to track, rename, recode, and append together `r prettyNum(nrow(ces), big.mark = ",")` responses across `r ncol(ces %>% select(-c("year", "case_id")))` policy preference question items from `r length(unique(ces$year))` individual CES survey data sets, ranging from `r min(ces$year)` to `r max(ces$year)`.
+
+\medskip
+The resulting time series is available as a [downloadable data set from the Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OSXDQO).
+This data set can be combined with the geographic, demographic, and political characteristics of each respondent from the [Cumulative CES Common Content](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/II2DB6) by merging on the `case_id` and `year` variables.
+
+\medskip
+Question items are categorized into nine issue area categories.
+Variable names include the issue category, and a suffix related to the specific question.
+Variable labels contain a condensed, one sentence description of the policy that respondents are being asked if they support or oppose.
+For each question item, this guide provides details on the years where the item appears, frequency tables for response values, and it's original, year-specific variable name and question wording. 
+
+\newpage
+
+<!-- #  -->
+<!-- # -->
+<!-- # -->
+
+# Question availability by year
+
+<!-- \vspace{-20pt} -->
+
+```{r results='asis'}
+tab <- wide_guide %>% 
+  mutate(topic = factor(
+    topic,
+    levels = c(
+      NA, "abortion", "environment", "guns", "health care", 
+      "immigration", "military", "spending", "trade", "other")  )) %>%
+  arrange(topic)
+
+#Insert category name blanks
+newtab <- tab[is.na(tab$topic), ]
+for(a in c(
+    "abortion", "environment", "guns", "health care", 
+    "immigration", "military", "spending", "trade", "other")){
+  df <- NULL
+  df[names(tab)] <- NA
+  df["topic"] <- a
+  df["q_code_common"] <- paste0("$\\textbf{", str_to_title(a), "}$")
+  newrows <- rbind(
+    df, 
+    tab %>% filter(topic == a) %>% mutate(q_code_common = paste0("$\\hspace{10pt}$", q_code_common)))
+  newtab <- rbind(newtab, newrows)
+}
+
+#Column collapsing and checkmark adding
+newtab <- newtab %>%
+  select(q_code_common, matches("^y20.[0-9]$"))
+newtab[,2:ncol(newtab)] <- sapply(
+  newtab[,2:ncol(newtab)], 
+  function(x) ifelse(is.na(x), "", "$\\checkmark$"))
+rownames(newtab) <- NULL
+
+#Printed table
+kable(
+  newtab,
+  format = "latex",
+  align = c("l", rep("c", length(unique(ces$year)))  ),
+  col.names=
+    c("Common variable name", 
+      seq(min(ces$year), max(ces$year), 1)),
+  linesep = "",
+  booktabs = TRUE,
+  escape = FALSE) %>%
+  kable_styling(latex_options = c("HOLD_position", "scale_down", "striped"))
+```
+
+
+
+\newpage
+
+# Usage warnings
+
+R users are advised to download and use the .dta version of the data set, as the .tab version replaces informative value labels with numbers.  To use .dta files in R, install and load the package "haven" via the following lines of code: `install.packages("haven"); library(haven)`.
+
+\medskip
+Some question wording varies slightly across time, with more extreme changes warranting a note at the end of each question item's section.  Further, some item response values are shortened and/or slightly re-worded from their original values out of convenience.  When shortening and re-wording occurs, the original value wording is listed inside the item's respective question wording table.  
+
+\medskip
+Users of the Cumulative CES Policy Preferences dataset are encouraged to reference this guide to examine details on any interested question item before use.  Users of previous versions of the guide should familiarize themselves with any relevant updates described in the section "Version updates".
+
+
+
+
+<!-- Version updates -->
+<!-- # -->
+<!-- # -->
+
+
+<!-- \newpage -->
+
+# Version updates
+
+Updates and changes from the previous (V1) to current version of the data:
+
+* Policy items from the 2020 Common Content were added, when applicable.
+
+* Four policy items on immigration were added: `immig_deport`, `immig_report`, `immig_reduce` and `immig_wall`.
+
+* Three policy items on trade policy were added.
+
+* Three policy items on health care were added, and the item previously named `repealaca` was renamed to `healthcare_aca`.
+
+* One correction was made with respect to `immig_services` in 2014.  Previously, responses from `immig_border` were recorded as responses for `immig_services` in 2014.  This error is corrected in the current version.
+
+* One correction was made with respect to `healthcare_aca`, previously `repealaca`, in 2014.  Previously, responses from `repealaca` in 2014 were re-coded and switched---i.e. responses of support coded as oppose, and vice versa---to match question wording in other years that asked about support for repealing the ACA.  However, question wording in 2014 already asked about repealing the ACA.  Thus, this update does not recode any responses for this question item, now named `healthcare_aca`.
+
+* Previously, responses from `gaymarriage` were re-coded and switched from 2006 through 2011 to match question wording from 2012 onwards that asked about support for *legalizing* gay marriage, rather than the 2016 through 2011 question wording asking about support for *banning* gay marriage.  Instead, this update separates responses from 2006 through 2011 into `gaymarriage_ban`, and responses from 2012 onwards into `gaymarriage_legalize`.
+
+* Previously, responses from `enviro_mpg` were re-coded and switched in 2018 to match question wording from all previous years that asked about support for *raising* fuel efficiency standards, rather than the 2018 and 2020 wording asking about support for *lowering* gay marriage.  Instead, this update separates responses from 2018 and 2020 into `enviro_mpg_lower`, and responses from earlier years into `enviro_mpg_raise`.
+
+
+
+
+# Merging instructions
+
+Users who have separately downloaded the Cumulative Common Content and Policy Preferences data sets can merge them using the `year` and `case_id` that are common between both.
+For users who have not downloaded the two data sets, the code chunk below can be run in R to produce a ready-to-use dataframe.
+
+\bigskip
+
+```{r echo = TRUE, eval = FALSE}
+#Install and load necessary packages
+install.packages(c("tidyverse", "haven", "dataverse"))
+library(tidyverse, haven, dataverse)
+
+#Load Cumulative Common content
+common <- get_dataframe_by_name(
+    filename = "cumulative_2006-2021.dta",
+    dataset = "10.7910/DVN/II2DB6",
+    server = "dataverse.harvard.edu",
+    original = TRUE,
+    .f = haven::read_dta)
+
+#Load Cumulative Policy Preferences
+preferences <- get_dataframe_by_name(
+    filename = "cumulative_cces_policy_preferences.tab",
+    dataset = "10.7910/DVN/OSXDQO",
+    server = "dataverse.harvard.edu",
+    original = TRUE,
+    .f = haven::read_dta)
+
+#Merge common content to policy preferences
+ces <- inner_join(common, preferences)
+```
+
+
+
+
+
+
+
+<!-- Table of contents  -->
+<!-- # -->
+<!-- # -->
+
+
+\newpage
+
+\tableofcontents
+
+
+
+<!-- Question items -->
+<!-- # -->
+<!-- # -->
+
+
+\newpage
+
+# Question items
+
+
+
+```{r results='asis', fig.width=6, fig.height=3.25, fig.cap="Density plots for question item", fig.align="center"}
+
+#ROTATE FOLLOWING TABLES (too wide)
+
+for(a in c(
+  "abortion", "environment", "guns", "health care", 
+  "immigration", "military", "spending", "trade", "other") ){
+
+  #New page break
+  if(a!="abortion"){
+    cat("\\newpage")
+  }
+  
+  #PRINT Topic heading
+  topic <- paste0(toupper(substr(a,1,1)),substr(a,2,nchar(a)))
+  cat("\n##",topic,"\n")
+
+  vars <- wide_guide[wide_guide$topic==a,"q_code_common"]
+  vars <- vars[!is.na(vars)]
+  for(v in vars){
+    #Variable heading
+    cat("\n\n###",v)
+
+    #PRINT Label heading
+    v2 <- gsub("\\\\","",v)
+    label <- wide[wide$q_code_common==v2,"q_label"]
+    cat("\n",label)
+    
+
+    #Wording part 1
+    tabword_vars <- wide_guide[wide_guide$q_code_common==v,-c(1:3)]
+    tabword_wording <- wide[wide$q_code_common==v2,] %>% select(matches("^y20.[0-9]_wording$"))
+    tabword_vars <- tabword_vars[colSums(!is.na(tabword_vars))>0]
+    tabword_wording <- tabword_wording[colSums(!is.na(tabword_wording))>0]
+    tabword_years <- as.numeric(gsub("^y","",names(tabword_vars)))
+    tabword <-
+      data.frame(
+        year=tabword_years,
+        var=unlist(tabword_vars),
+        wording=unlist(tabword_wording),
+        stringsAsFactors=F)
+    row.names(tabword) <- NULL
+
+    #PRINT Years in data
+    cat("\n\nYears in data:",paste(tabword_years,collapse=", "))
+    
+    
+    #Frequency tables/Density plots
+    if(grepl("spending_vs_tax|incometax_vs_salestax",v2)==F){
+      #Frequency table
+      tabfreq <- as.data.frame.matrix(table(ces[[v2]],ces$year))
+      tabfreq <- tabfreq[,colSums(tabfreq!=0)>0]
+      tabfreq[[v]] <- row.names(tabfreq)
+      row.names(tabfreq) <- NULL
+      tabfreq <- tabfreq[,c(ncol(tabfreq),1:(ncol(tabfreq)-1))]
+      #Commas
+      tabfreq[,2:ncol(tabfreq)] <-
+        sapply(
+          tabfreq[,2:ncol(tabfreq)], 
+          function(x) format(x,big.mark=",",scientific=F,trim=T))
+      #First column name
+      names(tabfreq)[1] <- "Response"
+  
+      #PRINT Frequency table
+      if(ncol(tabfreq) <= 10){
+        kable(
+          tabfreq,
+          format="latex",
+          booktabs=TRUE,
+          align=paste(c("l",rep("c",(ncol(tabfreq)-1))),collapse=""),
+          # col.names=c("",tabword_years),
+          caption=paste0(v,": Frequency table"),
+          linesep="",
+          longtable=TRUE,
+          escape=FALSE) %>% 
+          kable_styling(
+            font_size = 10,
+            latex_options = c("HOLD_position", "repeat_header", "scale_down")) %>%
+          print()
+      }else{
+        tabfreq2 <- 
+          t(tabfreq[, 2:ncol(tabfreq)]) %>% data.frame() %>%
+          rownames_to_column()
+        names(tabfreq2) <- c("Year", tabfreq[,1])
+        kable(
+          tabfreq2,
+          format="latex",
+          booktabs=TRUE,
+          align=paste(c("l",rep("c",(ncol(tabfreq2)-1))),collapse=""),
+          caption=paste0(v,": Frequency table"),
+          linesep="",
+          longtable=TRUE,
+          escape=FALSE) %>% 
+          kable_styling(
+            font_size = 10,
+            latex_options = c("HOLD_position", "repeat_header")) %>%
+          print()
+      }
+    }else{
+      #PRINT Density plot
+      cces_v <- ces[,c("year",v2)]
+      names(cces_v)[2] <- "var"
+      p <- cces_v %>% 
+        filter(year!=2009 & year<2018) %>% 
+        ggplot() + geom_density(aes(x=var)) + xlim(0,100) + 
+        facet_wrap(.~year,ncol=6) + 
+        labs(
+          title=paste0("Density plots for ",v2),
+          x="",y="Density")
+      print(p)
+    }
+    
+
+    #wording part 2
+    #PRINT Year-specific wording
+    cat("\n\n\nYear-specific variable names and wording")
+    kable(
+      tabword,
+      format="latex",
+      booktabs=TRUE,
+      caption=paste0(v,": Year-specific wording"),
+      col.names=c("Year","Variable","Question wording"),
+      linesep = "\\addlinespace",
+      longtable=TRUE,
+      escape=FALSE) %>% 
+      kable_styling(
+        font_size = 11,
+        latex_options=c("HOLD_position","repeat_header")) %>%
+      column_spec(3,width="10cm") %>%
+      print()
+    
+    
+    #Variable-specific notes (if applicable)
+    if(v2=="affirmativeaction_scale"){
+      cat("\n*Note: In 2006 and 2007, this question includes a fourth response option, 'Not sure', which has been re-coded as 'NA' in this data set.*\n\n")
+    }else if(v2=="enviro_scale"){
+      cat("\n*Note: From 2010 onward, this question includes a fifth response option, 'Global climate change is not occurring'.*\n\n")
+    }else if(v2=="gaymarriage"){
+      cat("\n*Note: In 2008, this question includes a third response option, 'Not sure', which has been re-coded as 'NA' in this data set.*\n\n")
+    }else if(v2=="immig_border"){
+      cat("\n*Note: In 2018 alone, question wording includes 'building a wall between the U.S. and Mexico', and has been categorized here as under the question item 'immig_wall'.*\n\n")
+    }else if(v2=="spending_cuts_least"){
+      cat("\n*Note: In 2006 and 2007, this question includes a fourth response option, 'Borrow'.*\n\n") #, which has been re-coded as 'NA' in this data set
+    }else if(v2=="spending_cuts_most"){
+      cat("\n*Note: In 2006 and 2007, this question includes a fourth response option, 'Borrow'.*\n\n") #, which has been re-coded as 'NA' in this data set
+    }else if(v2=="enviro_vs_jobs"){
+      cat("\n*Note: In 2006 and 2007, this question includes a sixth response option, 'Haven't thought much about this'.*\n\n")
+    }
+    
+  }
+}
+
+```
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,183 @@
+---
+title: \Large Cumulative CES Policy Preferences, Error checking
+author: "Angelo Dagonel^[PhD candidate, Department of Government, Harvard University.]"
+date: "Last error checked: `r Sys.Date()`"
+geometry: margin=3cm
+output:
+  pdf_document:
+    latex_engine: xelatex
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+indent: false
+mainfont: Arial
+classoption: 12pt
+header-includes: \usepackage{dcolumn}\usepackage{setspace}\singlespacing\usepackage{graphicx}\usepackage{caption}\captionsetup[table]{skip=10pt}\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black}
+documentclass: article
+---
+
+
+
+
+
+<!-- # Package and data loading, and option setting -->
+<!-- # -->
+<!-- # -->
+
+
+```{r, include = FALSE}
+
+rm(list=ls())
+
+library(tidyverse)
+library(haven)
+library(sjlabelled)
+
+library(knitr)
+library(kableExtra)
+
+library(ggplot2)
+library(gridExtra)
+theme_plot <- function () { 
+  theme_linedraw(base_size=10) %+replace% 
+    theme( 
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      strip.text = element_text(color = "Black", size = 10, margin = margin(0,0,8,0)),
+      strip.background = element_rect(fill = NA,color = NA),   
+      plot.title = element_text(size = 10, margin = margin(0,0,10,0)),
+      plot.subtitle = element_text(size = 9, margin = margin(0,0,10,0)),
+      axis.title.x = element_text(size = 10, margin = margin(10,0,10,0)),
+      axis.title.y = element_text(size = 10, angle=90, margin = margin(0,10,0,0)))
+}
+theme_set(theme_plot())
+
+wd <- "D:/Dropbox/CCES_SDA/"
+
+knitr::opts_chunk$set(echo = FALSE, comment = "", warning = FALSE)
+```
+
+
+```{r, include = FALSE, cache = FALSE}
+
+#Cumulative preferences
+ces <- read_dta(paste0(wd, "Cumulative Policy/cumulative_ces_policy_preferences.dta"))
+ces <- sjlabelled::as_label(ces)
+
+# Crosswalks
+wide_guide <- 
+  read.csv(
+    paste0(wd, "Cumulative Policy/output/latex-guide_preferences-crosswalk_wide-sanswording.csv"),
+    stringsAsFactors=F)
+
+wide <- 
+  read.csv(
+    paste0(wd, "Cumulative Policy/output/preferences-crosswalk_wide-withwording.csv"),
+    stringsAsFactors=F)
+
+long <- 
+  read.csv(
+    paste0(wd, "Cumulative Policy/output/preferences-crosswalk_long-withwording.csv"),
+    stringsAsFactors=F)
+
+```
+
+
+
+
+
+<!-- # Introduction -->
+<!-- # -->
+<!-- # -->
+
+
+> Dagonel, Angelo, 2022, "Cumulative CES Policy Preferences", \href{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OSXDQO}{\url{doi:10.7910/DVN/OSXDQO}}, Harvard Dataverse, V2. 
+
+\bigskip
+
+# Question item support by year
+
+
+```{r results='asis', fig.width = 5, fig.height= 4, fig.cap="Yearly support for question item", fig.align="center"}
+
+vars_supopp <- 
+  grep("^(abortion|enviro|guns|healthcare|immig|military|trade)_|gaymarriage_(ban|legalize)",
+       names(ces),
+       value = T)
+vars_supopp <- 
+  setdiff(
+    vars_supopp,
+    grep(
+      "_scale$|_vs_jobs$",
+      names(ces),
+      value = T))
+
+#ROTATE FOLLOWING TABLES (too wide)
+
+for(a in c(
+  "abortion", "environment", "guns", "health care", 
+  "immigration", "military", "spending", "trade", "other") ){
+
+  #New page break
+  if(a!="abortion"){
+    cat("\\newpage")
+  }
+  
+  #PRINT Topic heading
+  topic <- paste0(toupper(substr(a,1,1)),substr(a,2,nchar(a)))
+  cat("\n##",topic,"\n")
+
+  vars <- wide[wide$topic==a,"q_code_common"]
+  vars <- intersect(vars_supopp, vars)
+  for(v in vars){
+    #Variable heading
+    cat("\n\n###",v)
+
+    #PRINT Label heading
+    label <- wide[wide$q_code_common==v,"q_label"]
+    cat("\n",label)
+    
+    #Print graph
+    p_df <- ces[, c("year", v)]
+    names(p_df)[2] <- "item_response"
+    p_df <- p_df %>% 
+      group_by(year) %>% 
+      summarize(
+        support = 
+          sum(item_response == "Support", na.rm = TRUE)/
+          sum(!is.na(item_response)) ) %>% 
+      filter(!is.na(support))
+    p <- p_df %>% ggplot() +
+    geom_hline(aes(yintercept = .5), col = "grey60", linetype = "dotted") +
+    geom_line(aes(x = factor(year), y = support, group = 1)) +
+    geom_point(aes(x = factor(year), y = support, group = 1)) +
+    ylim(0, 1) +
+    labs(
+        title = paste0(v, ": ", label),
+        x = "Year", y = "Proportion support")
+    print(p)
+    
+    cat("\n\n\n")
+  }
+}
+
+```
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -253,7 +253,7 @@ cces_year,q_code,wording
 2014,CC14_323_3,Do you support or oppose each of the following proposals? . . . Prohibit abortions after the 20th week of pregnancy
 2014,CC14_323_4,Do you support or oppose each of the following proposals? . . . Allow employers to decline coverage of abortions in insurance plans
 2014,CC14_323_5,Do you support or oppose each of the following proposals? . . . Prohibit the expenditure of funds authorized or appropriated by federal law for any abortion
-2014,CC14_324_1,"The Affordable Health Care Act was passed into law in 2010. It does the following: Requires Americans to obtain health insurance. Prevents insurance companies from denying coverage for pre-existing conditions. Allows people to keep current health insurance and care provider. Sets up national health insurance option for those without coverage, but allows states the option to implement their own insurance system."
+2014,CC14_324_1,"The Affordable Health Care Act was passed into law in 2010. It does the following: Requires Americans to obtain health insurance. Prevents insurance companies from denying coverage for pre-existing conditions. Allows people to keep current health insurance and care provider. Sets up national health insurance option for those without coverage, but allows states the option to implement their own insurance system.  Would you vote to repeal the Affordable Care Act if you were in Congress in today?"
 2014,CC14_326_1,Do you support or oppose each of the following policies? Environmental Protection Agency regulating carbon emissions
 2014,CC14_326_2,Raise required fuel efficiency for the average automobile from 25 mpg to 35 mpg.
 2014,CC14_326_3,"Do you support or oppose each of the following policies? Your state requiring the use of a minimum amount of renewable fuels (wind, solar, and hydroelectric) in the generation of electricity even if electricity prices increase a little?"
@@ -277,6 +277,7 @@ cces_year,q_code,wording
 2015,CC15_321_2,What do you think the U.S. government should do about immigration? Select all that apply. Increase the number of border patrols on the US-Mexican border.
 2015,CC15_321_3,What do you think the U.S. government should do about immigration? Select all that apply. Allow police to question anyone they think may be in the country illegally.
 2015,CC15_321_4,What do you think the U.S. government should do about immigration? Select all that apply. Fine US businesses that hire illegal immigrants.
+2015,CC15_321_5,What do you think the U.S. government should do about immigration? Select all that apply. Identify and deport illegal immigrants.
 2015,CC15_322a,Do you support or oppose each of the following proposals? Always allow a woman to obtain an abortion as a matter of choice
 2015,CC15_322b,"Do you support or oppose each of the following proposals? Permit abortion ONLY in case of rape, incest or when the woman's life is in danger"
 2015,CC15_322c,Do you support or oppose each of the following proposals? Ban abortions after the 20th week of pregnancy
@@ -306,6 +307,7 @@ cces_year,q_code,wording
 2016,CC16_331_1,"What do you think the U.S. government should do about immigration? Select all that apply. Immigration - Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes"
 2016,CC16_331_2,What do you think the U.S. government should do about immigration? Select all that apply. Immigration - Increase the number of border patrols on the U.S.-Mexican border
 2016,CC16_331_4,What do you think the U.S. government should do about immigration? Select all that apply. Immigration - Fine U.S. businesses that hire illegal immigrants
+2016,CC16_331_7,What do you think the U.S. government should do about immigration? Select all that apply. Immigration - Idenfity and deport illegal immigrants
 2016,CC16_332a,Do you support or oppose each of the following proposals? Always allow a woman to obtain an abortion as a matter of choice
 2016,CC16_332b,"Do you support or oppose each of the following proposals? Permit abortion only in case of rape, incest or when the woman's life is in danger"
 2016,CC16_332c,Do you support or oppose each of the following proposals? Prohibit all abortions after the 20th week of pregnancy
@@ -337,6 +339,9 @@ cces_year,q_code,wording
 2017,CC17_331_2,What do you think the U.S. government should do about immigration? Select all that apply. Increase the number of border patrols on the U.S.-Mexican border.
 2017,CC17_331_3,What do you think the U.S. government should do about immigration? Select all that apply. Allow police to question anyone they think may be in the country illegally.
 2017,CC17_331_4,What do you think the U.S. government should do about immigration? Select all that apply. Fine U.S. businesses that hire illegal immigrants.
+2017,CC17_331_5,What do you think the U.S. government should do about immigration? Select all that apply. Identify and deport illegal immigrants.
+2017,CC17_331_7,What do you think the U.S. government should do about immigration? Select all that apply. Build a wall between the U.S. and Mexico.
+2017,CC17_331_8,What do you think the U.S. government should do about immigration? Select all that apply. Require local police departments to report to the federal government anyone they identify as an illegal immigrant.
 2017,CC17_332a,Do you support or oppose each of the following proposals? Always allow a woman to obtain an abortion as a matter of choice
 2017,CC17_332b,"Do you support or oppose each of the following proposals? Permit abortion only in case of rape, incest or when the woman's life is in danger"
 2017,CC17_332c,Do you support or oppose each of the following proposals? Ban abortions after the 20th week of pregnancy
@@ -369,6 +374,8 @@ cces_year,q_code,wording
 2018,CC18_321e,Do you support or oppose each of the following proposals? Prohibit the expenditure of funds authorized or appropriated by federal law for any abortion.
 2018,CC18_321f,Do you support or oppose each of the following proposals? Make abortion illegal in all circumstances.
 2018,CC18_322a,"What do you think the U.S. government should do about immigration? Do you support or oppose each of the following? Increase spending on border security by 25 billion, including building a wall between the U.S. and Mexico."
+2018,CC18_322c,What do you think the U.S. government should do about immigration? Do you support or oppose each of the following? Withhold federal funds from any local police department that does not report to the federal government anyone they identify as an illegal immigrant
+2018,CC18_322c_new,Reduce legal immigration by eliminating the visa lottery and ending family-based migration
 2018,CC18_327c,"Thinking now about health care policy, would you support or oppose each of the following proposals? Health Care – Repeal the entire Affordable Care Act."
 2018,CC18_415a,Do you support or oppose each of the following proposals? Give the Environmental Protection Agency power to regulate Carbon Dioxide emissions
 2018,CC18_415b,Do you support or oppose each of the following proposals? Lower the required fuel efficiency for the average automobile from 35 mpg to 25 mpg.
@@ -405,6 +412,8 @@ cces_year,q_code,wording
 2019,caseid,Case ID
 2019,CC19_322d,"Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes."
 2019,CC19_322e,Increase the number of border patrols on the U.S.-Mexican border.
+2019,CC19_322b,Withhold federal funds from any local police department that does not report to the federal government anyone they identify as an illegal immigrant.
+2019,CC19_322c,Reduce legal immigration by 50 percent.
 2019,CC19_321a,Always allow a woman to obtain an abortion as a matter of choice
 2019,CC19_321b,"Permit abortion ONLY in case of rape, incest or when the woman's life is in danger"
 2019,CC19_321c,Ban abortions after the 20th week of pregnancy
@@ -416,7 +425,7 @@ cces_year,q_code,wording
 2019,CC19_320a,"Background checks for all gun sales, including at gun shows and over the Internet"
 2019,CC19_320c,Ban assault rifles
 2019,CC19_320d,Make it easier for people to obtain concealed-carry permit
-2019,CC19_327d,Repeal the entire Affordable Care Act.
+2019,CC19_327d,"Thinking now about health care policy, would you support or oppose each of the following proposals? Repeal the entire Affordable Care Act."
 2017,CC17_343,"If your state were to have a budget deficit this year it would have to raise taxes on income and sales or cut spending, such as on education, health care, welfare, and road construction. What would you prefer more raising taxes or cutting spending? Choose a point along the scale from 100 percent tax increases (and no spending cuts) to 100 percent spending cuts (and no tax increases). The point in the middle means that the budget should be balanced with equal amounts of spending cuts and tax increases. If you are Not sure, or don't know, please check the 'Not sure' box."
 2017,CC17_344,"If the state had to raise taxes, what share of the tax increase should come from increased income taxes and what share from increased sales taxes? Choose a point along the scale from 100 percent from sales (and none from income) to 100 percent from income (and none from sales). The point in the middle means that any increase in taxes should come equally from sales and income taxes. If you are Not sure, or don't know, please check the 'Not sure' box."
 2017,CC17_345a,"The federal budget deficit is approximately 700 billion this year. If the Congress were to balance the budget it would have to consider cutting defense spending, cutting domestic spending (such as Medicare and Social Security), or raising taxes to cover the deficit. What would you most prefer that Congress do - cut domestic spending, cut defense spending, or raise taxes?"
@@ -525,3 +534,71 @@ cces_year,q_code,wording
 2006,v3022,"Some people think it is important to protect the environment even if it costs some jobs or otherwise reduces our standard of living. Other people think that protecting the environment is not as important as maintaining jobs and our standard of living.  Which is closer to the way you feel, or haven't you thought much about this?"
 2006,v4044,"What would you most prefer that Congress do - cut domestic spending, cut military spending, raise taxes, or borrow funds?"
 2006,v4046,What do you least want Congress to do?
+2019,CC19_327e,"Thinking now about health care policy, would you support or oppose each of the following proposals? Restore the Affordable Care Act’s mandate that all individuals be required to purchase health insurance."
+2018,CC18_327a,"Thinking now about health care policy, would you support or oppose each of the following proposals? Provide Medicare for all Americans."
+2019,CC19_327a,"Thinking now about health care policy, would you support or oppose each of the following proposals? Expand Medicare to a single comprehensive public health care coverage program that would cover all Americans."
+2019,CC19_327c,"Thinking now about health care policy, would you support or oppose each of the following proposals? Lower the eligibility age for Medicare from 65 to 50."
+2020,CC20_331a,"Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes."
+2020,CC20_331b,Increase the number of border patrols on the US-Mexican border.
+2020,CC20_331c,Withhold federal funds from any local police department that does not report to the federal government anyone they identify as an illegal immigrant.
+2020,CC20_331d,Reduce legal immigration by 50 percent over the next 10 years by eliminating the visa lottery and ending family-based migration.
+2020,CC20_331e,"Increase spending on border security by 25 billion dollars, including building a wall between the U.S. and Mexico."
+2020,CC20_332a,Always allow a woman to obtain an abortion as a matter of choice
+2020,CC20_332b,"Permit abortion only in case of rape, incest or when the woman's life is in danger"
+2020,CC20_332c,Prohibit all abortions after the 20th week of pregnancy
+2020,CC20_332d,Allow employers to decline coverage of abortions in insurance plans
+2020,CC20_332e,Prohibit the expenditure of funds authorized or appropriated by federal law for any abortion.
+2020,CC20_332f,Make abortions illegal in all circumstances
+2020,CC20_333a,Give the Environmental Protection Agency power to regulate Carbon Dioxide emissions
+2020,CC20_333d,Raise the average fuel efficiency for all cars and trucks in the US from 40 miles per gallon to 54.5 miles per gallon by 2025.
+2020,CC20_333b,"Require that each state use a minimum amount of renewable fuels (wind, solar, and hydroelectric) in the generation of electricity even if electricity prices increase a little"
+2020,CC20_333c,Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs
+2020,CC20_330a,Prohibit state and local governments from publishing the names and addresses of all gun owners
+2020,CC20_330b,Ban assault rifles
+2020,CC20_330c,Make it easier for people to obtain concealed-carry permit
+2020,CC20_443_1,State legislature spending -- Welfare
+2020,CC20_443_2,State legislature spending -- Health Care
+2020,CC20_443_3,State legislature spending -- Education
+2020,CC20_443_4,State legislature spending -- Law Enforcement
+2020,CC20_443_5,State legislature spending -- Transportation and Infrastructure
+2020,CC20_420_1,Ensure the supply of oil
+2020,CC20_420_2,Destroy a terrorist camp
+2020,CC20_420_3,Intervene in a region where there is genocide or a civil war
+2020,CC20_420_4,Assist the spread of democracy
+2020,CC20_420_5,Protect American allies under attack by foreign nations
+2020,CC20_420_6,Help the United Nations uphold international law
+2020,CC20_421r,Tax increases vs. Spending cuts
+2020,CC20_422r,Raise sales tax vs. Raise income tax
+2020,CC20_327d,Repeal the entire Affordable Care Act.
+2020,CC20_327e,Restore the Affordable Care Act’s mandate that all individuals be required to purchase health insurance.
+2020,CC20_327a,Expand Medicare to a single comprehensive public health care coverage program that would cover all Americans.
+2020,CC20_327c,Lower the eligibility age for Medicare from 65 to 50.
+2020,CC20_338a,Tariffs on 200 billion dollars worth of goods imported from China
+2020,CC20_338b,"25 percent tariffs on imported steel and 10percent on imported aluminum, EXCEPT from Canada and Mexico."
+2020,CC20_338c,"25 percent tariffs on all imported steel and 10percent on imported aluminum, INCLUDING from Canada and Mexico."
+2014,CC426_1,Legislative spending - Welfare
+2014,CC426_2,Legislative spending - Health Care
+2014,CC426_3,Legislative spending - Education
+2014,CC426_4,Legislative spending - Law Enforcement
+2014,CC426_5,Legislative spending - Transportation/Infrastructure
+2021,caseid,Case ID
+2021,CC21_322a,"Grant legal status to all illegal immigrants who have held jobs and paid taxes for at least 3 years, and not been convicted of any felony crimes."
+2021,CC21_322b,Increase the number of border patrols on the US-Mexican border
+2021,CC21_322c,Withhold federal funds from any local police department that does not report to the federal government anyone they identify as an illegal immigrant.
+2021,CC21_322d,Build a wall between the U.S. and Mexico.
+2021,CC21_323a,Always allow a woman the right to obtain an abortion as a matter of choice
+2021,CC21_323b,"Permit abortion only in case of rape, incest or when the woman's life is in dange"
+2021,CC21_323d,Prohibit all abortions after the 20th week of pregnancy
+2021,CC21_323e,Make abortions illegal in all circumstances
+2021,CC21_324a,Give the Environmental Protection Agency power to regulate Carbon Dioxide emissions
+2021,CC21_324d,Raise the average fuel efficiency for all cars and trucks in the US from 40 miles per gallon to 54.5 miles per gallon by 2025.
+2021,CC21_324b,"Require that each state use a minimum amount of renewable fuels (wind, solar, and hydroelectric) in the generation of electricity even if electricity prices increase a little"
+2021,CC21_324c,Strengthen the Environmental Protection Agency enforcement of the Clean Air Act and Clean Water Act even if it costs U.S. jobs
+2021,CC21_321f,Require criminal background checks on all gun sales
+2021,CC21_321a,Ban assault rifles
+2021,CC21_321b,Make it easier for people to obtain concealed-carry permit
+2021,CC21_320b,Repeal the entire Affordable Care Act.
+2021,CC21_320c,Restore the Affordable Care Act’s mandate that all individuals be required to purchase health insurance.
+2021,CC21_320a,Expand Medicare to a single comprehensive public health care program that would cover all Americans.
+2021,CC21_325a,20 percent tariffs on goods imported from China
+2021,CC21_325b,25 percent tariffs on imported steel and 10 percent on imported aluminum.

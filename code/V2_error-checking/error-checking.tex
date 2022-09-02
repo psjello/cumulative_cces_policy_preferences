@@ -1,0 +1,691 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{Arial}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Cumulative CES Policy Preferences, Error checking},
+  pdfauthor={Angelo Dagonel},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=3cm]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{dcolumn}\usepackage{setspace}\singlespacing\usepackage{graphicx}\usepackage{caption}\captionsetup[table]{skip=10pt}\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{\Large Cumulative CES Policy Preferences, Error checking}
+\author{Angelo Dagonel\footnote{PhD candidate, Department of Government,
+  Harvard University.}}
+\date{Last error checked: 2022-08-15}
+
+\begin{document}
+\maketitle
+
+\begin{quote}
+Dagonel, Angelo, 2022, ``Cumulative CES Policy Preferences'',
+\href{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OSXDQO}{\url{doi:10.7910/DVN/OSXDQO}},
+Harvard Dataverse, V2.
+\end{quote}
+
+\bigskip
+
+\hypertarget{question-item-support-by-year}{%
+\section{Question item support by
+year}\label{question-item-support-by-year}}
+
+\hypertarget{abortion}{%
+\subsection{Abortion}\label{abortion}}
+
+\hypertarget{abortion_20weeks}{%
+\subsubsection{abortion\_20weeks}\label{abortion_20weeks}}
+
+Ban abortion after 20 weeks
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-1} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-1}
+\end{figure}
+
+\hypertarget{abortion_always}{%
+\subsubsection{abortion\_always}\label{abortion_always}}
+
+Always allow abortion
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-2} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-2}
+\end{figure}
+
+\hypertarget{abortion_conditional}{%
+\subsubsection{abortion\_conditional}\label{abortion_conditional}}
+
+Allow abortion only under certain cases
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-3} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-3}
+\end{figure}
+
+\hypertarget{abortion_coverage}{%
+\subsubsection{abortion\_coverage}\label{abortion_coverage}}
+
+Employer coverage of abortion
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-4} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-4}
+\end{figure}
+
+\hypertarget{abortion_expenditures}{%
+\subsubsection{abortion\_expenditures}\label{abortion_expenditures}}
+
+Prohibit expenditures for abortion
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-5} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-5}
+\end{figure}
+
+\hypertarget{abortion_prohibition}{%
+\subsubsection{abortion\_prohibition}\label{abortion_prohibition}}
+
+Total prohibition of abortion
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-6} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-6}
+\end{figure}
+
+\newpage
+
+\hypertarget{environment}{%
+\subsection{Environment}\label{environment}}
+
+\hypertarget{enviro_airwateracts}{%
+\subsubsection{enviro\_airwateracts}\label{enviro_airwateracts}}
+
+Strengthen EPA enforcement of Clean Air and Water acts
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-7} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-7}
+\end{figure}
+
+\hypertarget{enviro_carbon}{%
+\subsubsection{enviro\_carbon}\label{enviro_carbon}}
+
+Allow EPA to regulate carbon dioxide emissions
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-8} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-8}
+\end{figure}
+
+\hypertarget{enviro_mpg_lower}{%
+\subsubsection{enviro\_mpg\_lower}\label{enviro_mpg_lower}}
+
+Lower average fuel efficiency
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-9} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-9}
+\end{figure}
+
+\hypertarget{enviro_mpg_raise}{%
+\subsubsection{enviro\_mpg\_raise}\label{enviro_mpg_raise}}
+
+Raise average fuel efficiency
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-10} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-10}
+\end{figure}
+
+\hypertarget{enviro_renewable}{%
+\subsubsection{enviro\_renewable}\label{enviro_renewable}}
+
+Require states use a minimum amount of renewable fuels
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-11} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-11}
+\end{figure}
+
+\newpage
+
+\hypertarget{guns}{%
+\subsection{Guns}\label{guns}}
+
+\hypertarget{guns_assaultban}{%
+\subsubsection{guns\_assaultban}\label{guns_assaultban}}
+
+Ban assault rifles
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-12} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-12}
+\end{figure}
+
+\hypertarget{guns_bgchecks}{%
+\subsubsection{guns\_bgchecks}\label{guns_bgchecks}}
+
+Background checks for guns for all sales
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-13} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-13}
+\end{figure}
+
+\hypertarget{guns_names}{%
+\subsubsection{guns\_names}\label{guns_names}}
+
+Prohibit state and local publishing gun owner names
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-14} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-14}
+\end{figure}
+
+\hypertarget{guns_permits}{%
+\subsubsection{guns\_permits}\label{guns_permits}}
+
+Ease ability to obtain concealed-carry permits
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-15} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-15}
+\end{figure}
+
+\newpage
+
+\hypertarget{health-care}{%
+\subsection{Health care}\label{health-care}}
+
+\hypertarget{healthcare_aca}{%
+\subsubsection{healthcare\_aca}\label{healthcare_aca}}
+
+Repeal the Affordable Care Act
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-16} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-16}
+\end{figure}
+
+\hypertarget{healthcare_acamandate}{%
+\subsubsection{healthcare\_acamandate}\label{healthcare_acamandate}}
+
+Restore ACA mandate requiring everyone to be insured
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-17} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-17}
+\end{figure}
+
+\hypertarget{healthcare_medicare}{%
+\subsubsection{healthcare\_medicare}\label{healthcare_medicare}}
+
+Provide Medicare for all Americans
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-18} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-18}
+\end{figure}
+
+\hypertarget{healthcare_medicareage}{%
+\subsubsection{healthcare\_medicareage}\label{healthcare_medicareage}}
+
+Lower the eligibility age for Medicare from 65 to 50
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-19} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-19}
+\end{figure}
+
+\newpage
+
+\hypertarget{immigration}{%
+\subsection{Immigration}\label{immigration}}
+
+\hypertarget{immig_border}{%
+\subsubsection{immig\_border}\label{immig_border}}
+
+Increase border security between US-Mexico
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-20} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-20}
+\end{figure}
+
+\hypertarget{immig_deport}{%
+\subsubsection{immig\_deport}\label{immig_deport}}
+
+Identify and deport illegal immigrants
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-21} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-21}
+\end{figure}
+
+\hypertarget{immig_employer}{%
+\subsubsection{immig\_employer}\label{immig_employer}}
+
+Sanction employers hiring undocumented
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-22} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-22}
+\end{figure}
+
+\hypertarget{immig_legalize}{%
+\subsubsection{immig\_legalize}\label{immig_legalize}}
+
+Grant conditional legal status to undocumented
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-23} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-23}
+\end{figure}
+
+\hypertarget{immig_police}{%
+\subsubsection{immig\_police}\label{immig_police}}
+
+Allow police questioning of suspected undocumented
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-24} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-24}
+\end{figure}
+
+\hypertarget{immig_reduce}{%
+\subsubsection{immig\_reduce}\label{immig_reduce}}
+
+Reduce legal immigration by 50 percent
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-25} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-25}
+\end{figure}
+
+\hypertarget{immig_report}{%
+\subsubsection{immig\_report}\label{immig_report}}
+
+Withhold funding from police failing to report illegal immigrants
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-26} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-26}
+\end{figure}
+
+\hypertarget{immig_services}{%
+\subsubsection{immig\_services}\label{immig_services}}
+
+Prohibit services to immigrants
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-27} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-27}
+\end{figure}
+
+\hypertarget{immig_wall}{%
+\subsubsection{immig\_wall}\label{immig_wall}}
+
+Increase spending on border security, including building a wall
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-28} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-28}
+\end{figure}
+
+\newpage
+
+\hypertarget{military}{%
+\subsection{Military}\label{military}}
+
+\hypertarget{military_democracy}{%
+\subsubsection{military\_democracy}\label{military_democracy}}
+
+Approve of military to assist in spread democracy
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-29} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-29}
+\end{figure}
+
+\hypertarget{military_genocide}{%
+\subsubsection{military\_genocide}\label{military_genocide}}
+
+Approve of military to intervene in genocide or civil war
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-30} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-30}
+\end{figure}
+
+\hypertarget{military_helpun}{%
+\subsubsection{military\_helpun}\label{military_helpun}}
+
+Approve of military to help the United Nations uphold international law
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-31} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-31}
+\end{figure}
+
+\hypertarget{military_oil}{%
+\subsubsection{military\_oil}\label{military_oil}}
+
+Approve of military ensuring oil supply
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-32} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-32}
+\end{figure}
+
+\hypertarget{military_protectallies}{%
+\subsubsection{military\_protectallies}\label{military_protectallies}}
+
+Approve of military to protect US allies under attack
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-33} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-33}
+\end{figure}
+
+\hypertarget{military_terroristcamp}{%
+\subsubsection{military\_terroristcamp}\label{military_terroristcamp}}
+
+Approve of military to destroy terrorist camp
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-34} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-34}
+\end{figure}
+
+\newpage
+
+\hypertarget{spending}{%
+\subsection{Spending}\label{spending}}
+
+\newpage
+
+\hypertarget{trade}{%
+\subsection{Trade}\label{trade}}
+
+\hypertarget{trade_canmex_except}{%
+\subsubsection{trade\_canmex\_except}\label{trade_canmex_except}}
+
+Tariffs on steel and aluminum EXCEPT from Canada and Mexico
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-35} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-35}
+\end{figure}
+
+\hypertarget{trade_canmex_include}{%
+\subsubsection{trade\_canmex\_include}\label{trade_canmex_include}}
+
+Tariffs on steel and aluminum INCLUDING from Canada and Mexico
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-36} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-36}
+\end{figure}
+
+\hypertarget{trade_china}{%
+\subsubsection{trade\_china}\label{trade_china}}
+
+Tariffs on goods imported from China
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-37} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-37}
+\end{figure}
+
+\newpage
+
+\hypertarget{other}{%
+\subsection{Other}\label{other}}
+
+\hypertarget{gaymarriage_ban}{%
+\subsubsection{gaymarriage\_ban}\label{gaymarriage_ban}}
+
+Amendment banning gay marriage
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-38} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-38}
+\end{figure}
+
+\hypertarget{gaymarriage_legalize}{%
+\subsubsection{gaymarriage\_legalize}\label{gaymarriage_legalize}}
+
+Support for legalizing gay marriage
+
+\begin{figure}
+
+{\centering \includegraphics{error-checking_files/figure-latex/unnamed-chunk-3-39} 
+
+}
+
+\caption{Yearly support for question item}\label{fig:unnamed-chunk-3-39}
+\end{figure}
+
+\end{document}
