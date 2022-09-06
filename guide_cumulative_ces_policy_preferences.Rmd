@@ -2,7 +2,8 @@
 title: \Large Guide to the Cumulative CES Policy Preferences
 author: 'Angelo Dagonel^[PhD candidate, Department of Government, Harvard University.
   Thanks to Shiro Kuriwaki, Stephen Ansolabehere and Brian Schaffner for their suggestions
-  and guidance. Please send questions and bug reports to: [dagonel@g.harvard.edu](dagonel@g.harvard.edu).]'
+  and guidance. Please send bug reports to [dagonel@g.harvard.edu](dagonel@g.harvard.edu),
+  or the [Github repository](https://github.com/psjello/cumulative_cces_policy_preferences) for the guide.]'
 date: 'Guide last updated: `r Sys.Date()`'
 output:
   pdf_document:
