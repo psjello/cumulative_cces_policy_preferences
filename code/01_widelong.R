@@ -2,6 +2,7 @@
 # Crosswalk (wide, long) making
 
 library(tidyverse)
+setwd("D:/Dropbox/CCES_SDA/Cumulative Policy/cumulative_cces_policy_preferences/")
 
 
 

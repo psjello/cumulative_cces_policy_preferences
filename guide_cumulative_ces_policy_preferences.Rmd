@@ -1,15 +1,18 @@
 ---
 title: \Large Guide to the Cumulative CES Policy Preferences
-author: "Angelo Dagonel^[PhD candidate, Department of Government, Harvard University. Thanks to Shiro Kuriwaki, Stephen Ansolabehere and Brian Schaffner for their suggestions and guidance. Please send questions and bug reports to: [dagonel@g.harvard.edu](dagonel@g.harvard.edu).]"
-date: "Guide last updated: `r Sys.Date()`"
-geometry: margin=3cm
+author: 'Angelo Dagonel^[PhD candidate, Department of Government, Harvard University.
+  Thanks to Shiro Kuriwaki, Stephen Ansolabehere and Brian Schaffner for their suggestions
+  and guidance. Please send questions and bug reports to: [dagonel@g.harvard.edu](dagonel@g.harvard.edu).]'
+date: 'Guide last updated: `r Sys.Date()`'
 output:
   pdf_document:
     latex_engine: xelatex
     fig_caption: yes
     keep_tex: yes
-    number_sections: true
-indent: false
+    number_sections: yes
+  word_document: default
+geometry: margin=3cm
+indent: no
 mainfont: Arial
 classoption: 12pt
 header-includes: \usepackage{dcolumn}\usepackage{setspace}\singlespacing\usepackage{graphicx}\usepackage{caption}\captionsetup[table]{skip=10pt}\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black}
@@ -332,11 +335,11 @@ for(a in c(
       #Commas
       tabfreq[,2:ncol(tabfreq)] <-
         sapply(
-          tabfreq[,2:ncol(tabfreq)], 
+          tabfreq[,2:ncol(tabfreq)],
           function(x) format(x,big.mark=",",scientific=F,trim=T))
       #First column name
       names(tabfreq)[1] <- "Response"
-  
+
       #PRINT Frequency table
       if(ncol(tabfreq) <= 10){
         kable(
@@ -348,13 +351,13 @@ for(a in c(
           caption=paste0(v,": Frequency table"),
           linesep="",
           longtable=TRUE,
-          escape=FALSE) %>% 
+          escape=FALSE) %>%
           kable_styling(
             font_size = 10,
             latex_options = c("HOLD_position", "repeat_header", "scale_down")) %>%
           print()
       }else{
-        tabfreq2 <- 
+        tabfreq2 <-
           t(tabfreq[, 2:ncol(tabfreq)]) %>% data.frame() %>%
           rownames_to_column()
         names(tabfreq2) <- c("Year", tabfreq[,1])
@@ -366,7 +369,7 @@ for(a in c(
           caption=paste0(v,": Frequency table"),
           linesep="",
           longtable=TRUE,
-          escape=FALSE) %>% 
+          escape=FALSE) %>%
           kable_styling(
             font_size = 10,
             latex_options = c("HOLD_position", "repeat_header")) %>%
@@ -376,10 +379,10 @@ for(a in c(
       #PRINT Density plot
       cces_v <- ces[,c("year",v2)]
       names(cces_v)[2] <- "var"
-      p <- cces_v %>% 
-        filter(year!=2009 & year<2018) %>% 
-        ggplot() + geom_density(aes(x=var)) + xlim(0,100) + 
-        facet_wrap(.~year,ncol=6) + 
+      p <- cces_v %>%
+        filter(year!=2009 & year<2018) %>%
+        ggplot() + geom_density(aes(x=var)) + xlim(0,100) +
+        facet_wrap(.~year,ncol=6) +
         labs(
           title=paste0("Density plots for ",v2),
           x="",y="Density")
@@ -421,6 +424,8 @@ for(a in c(
       cat("\n*Note: In 2006 and 2007, this question includes a fourth response option, 'Borrow'.*\n\n") #, which has been re-coded as 'NA' in this data set
     }else if(v2=="enviro_vs_jobs"){
       cat("\n*Note: In 2006 and 2007, this question includes a sixth response option, 'Haven't thought much about this'.*\n\n")
+    }else if(v2=="enviro_mpg_raise"){
+      cat("\n*Note: In 2018 alone, question wording includes 'lower the fuel efficiency', instead of 'raise the fuel efficiency' like all the other years..*\n\n")
     }
     
   }

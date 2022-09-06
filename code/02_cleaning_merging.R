@@ -21,7 +21,7 @@ library(sjlabelled)
 
 wide <- 
   read.csv(
-    "Cumulative Policy/output/preferences-crosswalk_wide-withwording.csv",
+    "Cumulative Policy/cumulative_cces_policy_preferences/output/preferences-crosswalk_wide-withwording.csv",
     stringsAsFactors=F)
 
 
@@ -320,14 +320,14 @@ ces <- ces %>% select(year, case_id, names(ces)[2:(ncol(ces)-1)])
 #Variable labels
 ces <- set_label(
   ces,
-  c("Survey year","Case ID",wide$q_label[1:55]))
+  c("Survey year","Case ID", wide$q_label[1:54]))
 
 
 #Export
 dat <- sjlabelled::as_label(ces) 
 write_dta(
   dat,
-  "Cumulative Policy/cumulative_ces_policy_preferences.dta",
+  "Cumulative Policy/cumulative_cces_policy_preferences/cumulative_ces_policy_preferences.dta",
   version=14)
 
 
