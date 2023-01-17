@@ -94,7 +94,7 @@ long <-
 <!-- # -->
 
 
-> Dagonel, Angelo, 2022, "Cumulative CES Policy Preferences", \href{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OSXDQO}{\url{doi:10.7910/DVN/OSXDQO}}, Harvard Dataverse, V2. 
+> Dagonel, Angelo, 2023, "Cumulative CES Policy Preferences", \href{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OSXDQO}{\url{doi:10.7910/DVN/OSXDQO}}, Harvard Dataverse, V3. 
 
 \bigskip
 

@@ -41,7 +41,7 @@ wide <-
 paths <- c(
   "2006/Data/COMMON/DATASET/cces06_common.dta",
   "2007/Data/Commmon/CCES0043_OUTPUT.sav",
-  "2008/Data/cces08_common_output.dta",
+  "2008/Data/cces_2008_common.dta",
   "2009/Data/COMMON/cces09_cmn_output.dta",
   "2010/Data/CCES10_Common_OUTPUT.dta",
   "2011/Common/CCES11_Common_OUTPUT.dta",
@@ -72,8 +72,14 @@ for(path in paths){
     cat("\n\nLoad CCES", y, "\n")
     cesy <- read_sav(path)
     
-    #else condition
-  }else if(y != 2007){
+  #2008 condition
+  }else if(y == 2008){
+    cat("\n\nLoad CCES", y, "\n")
+    cesy <- read_dta(path)
+    names(cesy) <- tolower(names(cesy))
+  
+  #All other years
+  }else if(!(y %in% c(2007, 2008))){
     cat("\n\nLoad CCES", y, "\n")
     cesy <- read_dta(path)
   }
