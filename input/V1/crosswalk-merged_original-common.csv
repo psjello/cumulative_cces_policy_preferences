@@ -1,0 +1,617 @@
+cces_year,topic,q_code_common,q_code,q_label
+2006,NA,case_id,v1000,Respondent ID
+2006,environment,enviro_scale,v2092,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2006,other,gaymarriage_scale,v2103,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2006,abortion,abortion_scale,v3019,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2006,environment,enviro_vs_jobs,v3022,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2006,other,affirmativeaction_scale,v3027,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2006,military,military_oil,v3029,Approve of military ensuring oil supply
+2006,military,military_terroristcamp,v3030,Approve of military to destroy terrorist camp
+2006,military,military_genocide,v3031,Approve of military to intervene in genocide or civil war
+2006,military,military_democracy,v3032,Approve of military to assist in spread democracy
+2006,military,military_protectallies,v3033,Approve of military to protect US allies under attack
+2006,military,military_helpun,v3034,Approve of military to help the United Nations uphold international law
+2006,spending,spending_vs_tax,v4040,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2006,other,incometax_vs_salestax,v4042,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2006,spending,spending_cuts_most,v4044,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2006,spending,spending_cuts_least,v4046,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2006,immigration,immig_legalize,NA,Grant conditional legal status to undocumented
+2006,immigration,immig_border,NA,Increase border security between US-Mexico
+2006,immigration,immig_police,NA,Allow police questioning of suspected undocumented
+2006,immigration,immig_employer,NA,Sanction employers hiring undocumented
+2006,immigration,immig_services,NA,Prohibit services to immigrants
+2006,abortion,abortion_always,NA,Always allow abortion
+2006,abortion,abortion_conditional,NA,Allow abortion only under certain cases
+2006,abortion,abortion_20weeks,NA,Ban abortion after 20 weeks
+2006,abortion,abortion_coverage,NA,Employer coverage of abortion
+2006,abortion,abortion_expenditures,NA,Prohibit expenditures for abortion
+2006,abortion,abortion_prohibition,NA,Total prohibition of abortion
+2006,environment,enviro_carbon,NA,Allow EPA to regulate carbon dioxide emissions
+2006,environment,enviro_35mpg,NA,Raise fuel efficiency from 25 to 35 mpg
+2006,environment,enviro_renewable,NA,Require states use a minimum amount of renewable fuels
+2006,environment,enviro_airwateracts,NA,Strengthen EPA enforcement of Clean Air and Water acts
+2006,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2006,guns,guns_bgchecks,NA,Background checks for guns for all sales
+2006,guns,guns_names,NA,Prohibit state and local publishing gun owner names
+2006,guns,guns_assaultban,NA,Ban assault rifles
+2006,guns,guns_permits,NA,Ease ability to obtain concealed-carry permits
+2006,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2006,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2006,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2006,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2006,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2006,other,gaymarriage,NA,Opposition to gay marriage
+2006,other,affirmativeaction,NA,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2006,other,repealaca,NA,Repeal the Affordable Care Act
+2007,NA,case_id,caseid,Respondent ID
+2007,environment,enviro_scale,CC06_V2092,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2007,other,gaymarriage_scale,CC06_V2103,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2007,abortion,abortion_scale,CC06_V3019,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2007,environment,enviro_vs_jobs,CC06_V3022,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2007,other,affirmativeaction_scale,CC06_V3027,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2007,military,military_oil,CC06_V3029,Approve of military ensuring oil supply
+2007,military,military_terroristcamp,CC06_V3030,Approve of military to destroy terrorist camp
+2007,military,military_genocide,CC06_V3031,Approve of military to intervene in genocide or civil war
+2007,military,military_democracy,CC06_V3032,Approve of military to assist in spread democracy
+2007,military,military_protectallies,CC06_V3033,Approve of military to protect US allies under attack
+2007,military,military_helpun,CC06_V3034,Approve of military to help the United Nations uphold international law
+2007,spending,spending_vs_tax,CC06_V4040,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2007,other,incometax_vs_salestax,CC06_V4042,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2007,spending,spending_cuts_most,CC06_V4044,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2007,spending,spending_cuts_least,CC06_V4046,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2007,immigration,immig_employer,CC12x_1,Sanction employers hiring undocumented
+2007,immigration,immig_legalize,CC12x_2,Grant conditional legal status to undocumented
+2007,immigration,immig_border,CC12x_4,Increase border security between US-Mexico
+2007,immigration,immig_police,NA,Allow police questioning of suspected undocumented
+2007,immigration,immig_services,NA,Prohibit services to immigrants
+2007,abortion,abortion_always,NA,Always allow abortion
+2007,abortion,abortion_conditional,NA,Allow abortion only under certain cases
+2007,abortion,abortion_20weeks,NA,Ban abortion after 20 weeks
+2007,abortion,abortion_coverage,NA,Employer coverage of abortion
+2007,abortion,abortion_expenditures,NA,Prohibit expenditures for abortion
+2007,abortion,abortion_prohibition,NA,Total prohibition of abortion
+2007,environment,enviro_carbon,NA,Allow EPA to regulate carbon dioxide emissions
+2007,environment,enviro_35mpg,NA,Raise fuel efficiency from 25 to 35 mpg
+2007,environment,enviro_renewable,NA,Require states use a minimum amount of renewable fuels
+2007,environment,enviro_airwateracts,NA,Strengthen EPA enforcement of Clean Air and Water acts
+2007,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2007,guns,guns_bgchecks,NA,Background checks for guns for all sales
+2007,guns,guns_names,NA,Prohibit state and local publishing gun owner names
+2007,guns,guns_assaultban,NA,Ban assault rifles
+2007,guns,guns_permits,NA,Ease ability to obtain concealed-carry permits
+2007,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2007,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2007,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2007,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2007,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2007,other,gaymarriage,NA,Opposition to gay marriage
+2007,other,affirmativeaction,NA,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2007,other,repealaca,NA,Repeal the Affordable Care Act
+2008,spending,spending_cuts_most,cc309,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2008,abortion,abortion_scale,cc310,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2008,spending,spending_cuts_least,cc310a,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2008,environment,enviro_vs_jobs,cc311,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2008,other,affirmativeaction,cc313,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2008,other,gaymarriage,cc316f,Opposition to gay marriage
+2008,military,military_oil,cc418_1,Approve of military ensuring oil supply
+2008,military,military_terroristcamp,cc418_2,Approve of military to destroy terrorist camp
+2008,military,military_genocide,cc418_3,Approve of military to intervene in genocide or civil war
+2008,military,military_democracy,cc418_4,Approve of military to assist in spread democracy
+2008,military,military_protectallies,cc418_5,Approve of military to protect US allies under attack
+2008,military,military_helpun,cc418_6,Approve of military to help the United Nations uphold international law
+2008,spending,spending_vs_tax,cc420,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2008,other,incometax_vs_salestax,cc421,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2008,NA,case_id,v100,Respondent ID
+2008,immigration,immig_legalize,NA,Grant conditional legal status to undocumented
+2008,immigration,immig_border,NA,Increase border security between US-Mexico
+2008,immigration,immig_police,NA,Allow police questioning of suspected undocumented
+2008,immigration,immig_employer,NA,Sanction employers hiring undocumented
+2008,immigration,immig_services,NA,Prohibit services to immigrants
+2008,abortion,abortion_always,NA,Always allow abortion
+2008,abortion,abortion_conditional,NA,Allow abortion only under certain cases
+2008,abortion,abortion_20weeks,NA,Ban abortion after 20 weeks
+2008,abortion,abortion_coverage,NA,Employer coverage of abortion
+2008,abortion,abortion_expenditures,NA,Prohibit expenditures for abortion
+2008,abortion,abortion_prohibition,NA,Total prohibition of abortion
+2008,environment,enviro_scale,NA,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2008,environment,enviro_carbon,NA,Allow EPA to regulate carbon dioxide emissions
+2008,environment,enviro_35mpg,NA,Raise fuel efficiency from 25 to 35 mpg
+2008,environment,enviro_renewable,NA,Require states use a minimum amount of renewable fuels
+2008,environment,enviro_airwateracts,NA,Strengthen EPA enforcement of Clean Air and Water acts
+2008,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2008,guns,guns_bgchecks,NA,Background checks for guns for all sales
+2008,guns,guns_names,NA,Prohibit state and local publishing gun owner names
+2008,guns,guns_assaultban,NA,Ban assault rifles
+2008,guns,guns_permits,NA,Ease ability to obtain concealed-carry permits
+2008,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2008,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2008,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2008,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2008,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2008,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2008,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2008,other,repealaca,NA,Repeal the Affordable Care Act
+2009,environment,enviro_scale,cc09_51,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2009,abortion,abortion_scale,cc09_53,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2009,other,gaymarriage,cc09_54,Opposition to gay marriage
+2009,other,affirmativeaction,cc09_55,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2009,NA,case_id,v100,Respondent ID
+2009,immigration,immig_legalize,NA,Grant conditional legal status to undocumented
+2009,immigration,immig_border,NA,Increase border security between US-Mexico
+2009,immigration,immig_police,NA,Allow police questioning of suspected undocumented
+2009,immigration,immig_employer,NA,Sanction employers hiring undocumented
+2009,immigration,immig_services,NA,Prohibit services to immigrants
+2009,abortion,abortion_always,NA,Always allow abortion
+2009,abortion,abortion_conditional,NA,Allow abortion only under certain cases
+2009,abortion,abortion_20weeks,NA,Ban abortion after 20 weeks
+2009,abortion,abortion_coverage,NA,Employer coverage of abortion
+2009,abortion,abortion_expenditures,NA,Prohibit expenditures for abortion
+2009,abortion,abortion_prohibition,NA,Total prohibition of abortion
+2009,environment,enviro_carbon,NA,Allow EPA to regulate carbon dioxide emissions
+2009,environment,enviro_35mpg,NA,Raise fuel efficiency from 25 to 35 mpg
+2009,environment,enviro_renewable,NA,Require states use a minimum amount of renewable fuels
+2009,environment,enviro_airwateracts,NA,Strengthen EPA enforcement of Clean Air and Water acts
+2009,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2009,guns,guns_bgchecks,NA,Background checks for guns for all sales
+2009,guns,guns_names,NA,Prohibit state and local publishing gun owner names
+2009,guns,guns_assaultban,NA,Ban assault rifles
+2009,guns,guns_permits,NA,Ease ability to obtain concealed-carry permits
+2009,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2009,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2009,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2009,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2009,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2009,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2009,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2009,other,repealaca,NA,Repeal the Affordable Care Act
+2009,military,military_oil,NA,Approve of military ensuring oil supply
+2009,military,military_terroristcamp,NA,Approve of military to destroy terrorist camp
+2009,military,military_genocide,NA,Approve of military to intervene in genocide or civil war
+2009,military,military_democracy,NA,Approve of military to assist in spread democracy
+2009,military,military_protectallies,NA,Approve of military to protect US allies under attack
+2009,military,military_helpun,NA,Approve of military to help the United Nations uphold international law
+2009,spending,spending_vs_tax,NA,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2009,other,incometax_vs_salestax,NA,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2009,environment,enviro_vs_jobs,NA,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2009,spending,spending_cuts_most,NA,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2009,spending,spending_cuts_least,NA,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2010,guns,guns_scale,CC320,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2010,environment,enviro_scale,CC321,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2010,immigration,immig_employer,CC322_1,Sanction employers hiring undocumented
+2010,immigration,immig_legalize,CC322_2,Grant conditional legal status to undocumented
+2010,immigration,immig_border,CC322_4,Increase border security between US-Mexico
+2010,immigration,immig_police,CC322_5,Allow police questioning of suspected undocumented
+2010,abortion,abortion_scale,CC324,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2010,environment,enviro_vs_jobs,CC325,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2010,other,gaymarriage,CC326,Opposition to gay marriage
+2010,other,affirmativeaction,CC327,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2010,spending,spending_cuts_most,CC328,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2010,spending,spending_cuts_least,CC329,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2010,military,military_oil,CC414_1,Approve of military ensuring oil supply
+2010,military,military_terroristcamp,CC414_2,Approve of military to destroy terrorist camp
+2010,military,military_genocide,CC414_3,Approve of military to intervene in genocide or civil war
+2010,military,military_democracy,CC414_4,Approve of military to assist in spread democracy
+2010,military,military_protectallies,CC414_5,Approve of military to protect US allies under attack
+2010,military,military_helpun,CC414_6,Approve of military to help the United Nations uphold international law
+2010,spending,spending_vs_tax,CC415r,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2010,other,incometax_vs_salestax,CC416r,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2010,NA,case_id,V100,Respondent ID
+2010,immigration,immig_services,NA,Prohibit services to immigrants
+2010,abortion,abortion_always,NA,Always allow abortion
+2010,abortion,abortion_conditional,NA,Allow abortion only under certain cases
+2010,abortion,abortion_20weeks,NA,Ban abortion after 20 weeks
+2010,abortion,abortion_coverage,NA,Employer coverage of abortion
+2010,abortion,abortion_expenditures,NA,Prohibit expenditures for abortion
+2010,abortion,abortion_prohibition,NA,Total prohibition of abortion
+2010,environment,enviro_carbon,NA,Allow EPA to regulate carbon dioxide emissions
+2010,environment,enviro_35mpg,NA,Raise fuel efficiency from 25 to 35 mpg
+2010,environment,enviro_renewable,NA,Require states use a minimum amount of renewable fuels
+2010,environment,enviro_airwateracts,NA,Strengthen EPA enforcement of Clean Air and Water acts
+2010,guns,guns_bgchecks,NA,Background checks for guns for all sales
+2010,guns,guns_names,NA,Prohibit state and local publishing gun owner names
+2010,guns,guns_assaultban,NA,Ban assault rifles
+2010,guns,guns_permits,NA,Ease ability to obtain concealed-carry permits
+2010,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2010,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2010,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2010,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2010,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2010,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2010,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2010,other,repealaca,NA,Repeal the Affordable Care Act
+2011,environment,enviro_scale,CC350,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2011,immigration,immig_legalize,CC351_1,Grant conditional legal status to undocumented
+2011,immigration,immig_border,CC351_2,Increase border security between US-Mexico
+2011,immigration,immig_police,CC351_3,Allow police questioning of suspected undocumented
+2011,abortion,abortion_scale,CC352,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2011,other,gaymarriage,CC353,Opposition to gay marriage
+2011,other,affirmativeaction,CC354,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2011,spending,spending_cuts_most,CC355a,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2011,spending,spending_cuts_least,CC355b,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2011,military,military_oil,CC356_1,Approve of military ensuring oil supply
+2011,military,military_terroristcamp,CC356_2,Approve of military to destroy terrorist camp
+2011,military,military_genocide,CC356_3,Approve of military to intervene in genocide or civil war
+2011,military,military_democracy,CC356_4,Approve of military to assist in spread democracy
+2011,military,military_protectallies,CC356_5,Approve of military to protect US allies under attack
+2011,military,military_helpun,CC356_6,Approve of military to help the United Nations uphold international law
+2011,spending,spending_vs_tax,CC357,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2011,other,incometax_vs_salestax,CC358,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2011,NA,case_id,V100,Respondent ID
+2011,immigration,immig_employer,NA,Sanction employers hiring undocumented
+2011,immigration,immig_services,NA,Prohibit services to immigrants
+2011,abortion,abortion_always,NA,Always allow abortion
+2011,abortion,abortion_conditional,NA,Allow abortion only under certain cases
+2011,abortion,abortion_20weeks,NA,Ban abortion after 20 weeks
+2011,abortion,abortion_coverage,NA,Employer coverage of abortion
+2011,abortion,abortion_expenditures,NA,Prohibit expenditures for abortion
+2011,abortion,abortion_prohibition,NA,Total prohibition of abortion
+2011,environment,enviro_carbon,NA,Allow EPA to regulate carbon dioxide emissions
+2011,environment,enviro_35mpg,NA,Raise fuel efficiency from 25 to 35 mpg
+2011,environment,enviro_renewable,NA,Require states use a minimum amount of renewable fuels
+2011,environment,enviro_airwateracts,NA,Strengthen EPA enforcement of Clean Air and Water acts
+2011,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2011,guns,guns_bgchecks,NA,Background checks for guns for all sales
+2011,guns,guns_names,NA,Prohibit state and local publishing gun owner names
+2011,guns,guns_assaultban,NA,Ban assault rifles
+2011,guns,guns_permits,NA,Ease ability to obtain concealed-carry permits
+2011,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2011,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2011,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2011,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2011,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2011,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2011,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2011,other,repealaca,NA,Repeal the Affordable Care Act
+2011,environment,enviro_vs_jobs,NA,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2012,guns,guns_scale,CC320,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2012,environment,enviro_scale,CC321,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2012,immigration,immig_legalize,CC322_1,Grant conditional legal status to undocumented
+2012,immigration,immig_border,CC322_2,Increase border security between US-Mexico
+2012,immigration,immig_police,CC322_3,Allow police questioning of suspected undocumented
+2012,immigration,immig_employer,CC322_4,Sanction employers hiring undocumented
+2012,immigration,immig_services,CC322_5,Prohibit services to immigrants
+2012,abortion,abortion_scale,CC324,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2012,environment,enviro_vs_jobs,CC325,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2012,other,gaymarriage,CC326,Opposition to gay marriage
+2012,other,affirmativeaction,CC327,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2012,spending,spending_cuts_most,CC328,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2012,spending,spending_cuts_least,CC329,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2012,other,repealaca,CC332G,Repeal the Affordable Care Act
+2012,military,military_oil,CC414_1,Approve of military ensuring oil supply
+2012,military,military_terroristcamp,CC414_2,Approve of military to destroy terrorist camp
+2012,military,military_genocide,CC414_3,Approve of military to intervene in genocide or civil war
+2012,military,military_democracy,CC414_4,Approve of military to assist in spread democracy
+2012,military,military_protectallies,CC414_5,Approve of military to protect US allies under attack
+2012,military,military_helpun,CC414_6,Approve of military to help the United Nations uphold international law
+2012,spending,spending_vs_tax,CC415r,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2012,other,incometax_vs_salestax,CC416r,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2012,NA,case_id,V101,Respondent ID
+2012,abortion,abortion_always,NA,Always allow abortion
+2012,abortion,abortion_conditional,NA,Allow abortion only under certain cases
+2012,abortion,abortion_20weeks,NA,Ban abortion after 20 weeks
+2012,abortion,abortion_coverage,NA,Employer coverage of abortion
+2012,abortion,abortion_expenditures,NA,Prohibit expenditures for abortion
+2012,abortion,abortion_prohibition,NA,Total prohibition of abortion
+2012,environment,enviro_carbon,NA,Allow EPA to regulate carbon dioxide emissions
+2012,environment,enviro_35mpg,NA,Raise fuel efficiency from 25 to 35 mpg
+2012,environment,enviro_renewable,NA,Require states use a minimum amount of renewable fuels
+2012,environment,enviro_airwateracts,NA,Strengthen EPA enforcement of Clean Air and Water acts
+2012,guns,guns_bgchecks,NA,Background checks for guns for all sales
+2012,guns,guns_names,NA,Prohibit state and local publishing gun owner names
+2012,guns,guns_assaultban,NA,Ban assault rifles
+2012,guns,guns_permits,NA,Ease ability to obtain concealed-carry permits
+2012,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2012,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2012,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2012,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2012,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2012,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2012,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2013,NA,case_id,caseid,Respondent ID
+2013,guns,guns_bgchecks,CC13_320a,Background checks for guns for all sales
+2013,guns,guns_names,CC13_320b,Prohibit state and local publishing gun owner names
+2013,guns,guns_assaultban,CC13_320d,Ban assault rifles
+2013,guns,guns_permits,CC13_320e,Ease ability to obtain concealed-carry permits
+2013,spending,spending_vs_tax,CC13_323,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2013,other,incometax_vs_salestax,CC13_324,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2013,spending,spending_cuts_most,CC13_331a,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2013,spending,spending_cuts_least,CC13_331b,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2013,military,military_oil,CC322_1,Approve of military ensuring oil supply
+2013,military,military_terroristcamp,CC322_2,Approve of military to destroy terrorist camp
+2013,military,military_genocide,CC322_3,Approve of military to intervene in genocide or civil war
+2013,military,military_democracy,CC322_4,Approve of military to assist in spread democracy
+2013,military,military_protectallies,CC322_5,Approve of military to protect US allies under attack
+2013,military,military_helpun,CC322_6,Approve of military to help the United Nations uphold international law
+2013,immigration,immig_legalize,CC326_1,Grant conditional legal status to undocumented
+2013,immigration,immig_border,CC326_2,Increase border security between US-Mexico
+2013,immigration,immig_police,CC326_3,Allow police questioning of suspected undocumented
+2013,immigration,immig_employer,CC326_4,Sanction employers hiring undocumented
+2013,immigration,immig_services,CC326_5,Prohibit services to immigrants
+2013,abortion,abortion_scale,CC327,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2013,environment,enviro_vs_jobs,CC328,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2013,other,gaymarriage,CC329,Opposition to gay marriage
+2013,other,affirmativeaction,CC330,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2013,other,repealaca,CC332C,Repeal the Affordable Care Act
+2013,abortion,abortion_always,NA,Always allow abortion
+2013,abortion,abortion_conditional,NA,Allow abortion only under certain cases
+2013,abortion,abortion_20weeks,NA,Ban abortion after 20 weeks
+2013,abortion,abortion_coverage,NA,Employer coverage of abortion
+2013,abortion,abortion_expenditures,NA,Prohibit expenditures for abortion
+2013,abortion,abortion_prohibition,NA,Total prohibition of abortion
+2013,environment,enviro_scale,NA,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2013,environment,enviro_carbon,NA,Allow EPA to regulate carbon dioxide emissions
+2013,environment,enviro_35mpg,NA,Raise fuel efficiency from 25 to 35 mpg
+2013,environment,enviro_renewable,NA,Require states use a minimum amount of renewable fuels
+2013,environment,enviro_airwateracts,NA,Strengthen EPA enforcement of Clean Air and Water acts
+2013,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2013,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2013,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2013,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2013,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2013,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2013,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2013,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2014,guns,guns_bgchecks,CC14_320a,Background checks for guns for all sales
+2014,guns,guns_names,CC14_320b,Prohibit state and local publishing gun owner names
+2014,guns,guns_assaultban,CC14_320d,Ban assault rifles
+2014,guns,guns_permits,CC14_320e,Ease ability to obtain concealed-carry permits
+2014,immigration,immig_legalize,CC14_322_1,Grant conditional legal status to undocumented
+2014,immigration,immig_border,CC14_322_2,Increase border security between US-Mexico
+2014,immigration,immig_police,CC14_322_3,Allow police questioning of suspected undocumented
+2014,immigration,immig_employer,CC14_322_4,Sanction employers hiring undocumented
+2014,immigration,immig_services,CC14_322_5,Prohibit services to immigrants
+2014,abortion,abortion_always,CC14_323_1,Always allow abortion
+2014,abortion,abortion_conditional,CC14_323_2,Allow abortion only under certain cases
+2014,abortion,abortion_20weeks,CC14_323_3,Ban abortion after 20 weeks
+2014,abortion,abortion_coverage,CC14_323_4,Employer coverage of abortion
+2014,abortion,abortion_expenditures,CC14_323_5,Prohibit expenditures for abortion
+2014,other,repealaca,CC14_324_1,Repeal the Affordable Care Act
+2014,environment,enviro_carbon,CC14_326_1,Allow EPA to regulate carbon dioxide emissions
+2014,environment,enviro_35mpg,CC14_326_2,Raise fuel efficiency from 25 to 35 mpg
+2014,environment,enviro_renewable,CC14_326_3,Require states use a minimum amount of renewable fuels
+2014,environment,enviro_airwateracts,CC14_326_4,Strengthen EPA enforcement of Clean Air and Water acts
+2014,other,gaymarriage,CC14_327,Opposition to gay marriage
+2014,other,affirmativeaction,CC14_328,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2014,spending,spending_cuts_most,CC14_329a,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2014,spending,spending_cuts_least,CC14_329b,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2014,military,military_oil,CC414_1,Approve of military ensuring oil supply
+2014,military,military_terroristcamp,CC414_2,Approve of military to destroy terrorist camp
+2014,military,military_genocide,CC414_3,Approve of military to intervene in genocide or civil war
+2014,military,military_democracy,CC414_4,Approve of military to assist in spread democracy
+2014,military,military_protectallies,CC414_5,Approve of military to protect US allies under attack
+2014,military,military_helpun,CC414_6,Approve of military to help the United Nations uphold international law
+2014,spending,spending_vs_tax,CC415r,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2014,other,incometax_vs_salestax,CC416r,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2014,NA,case_id,V101,Respondent ID
+2014,abortion,abortion_scale,NA,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2014,abortion,abortion_prohibition,NA,Total prohibition of abortion
+2014,environment,enviro_scale,NA,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2014,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2014,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2014,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2014,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2014,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2014,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2014,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2014,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2014,environment,enviro_vs_jobs,NA,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2015,guns,guns_bgchecks,CC15_320a,Background checks for guns for all sales
+2015,guns,guns_names,CC15_320b,Prohibit state and local publishing gun owner names
+2015,guns,guns_assaultban,CC15_320c,Ban assault rifles
+2015,guns,guns_permits,CC15_320d,Ease ability to obtain concealed-carry permits
+2015,immigration,immig_legalize,CC15_321_1,Grant conditional legal status to undocumented
+2015,immigration,immig_border,CC15_321_2,Increase border security between US-Mexico
+2015,immigration,immig_police,CC15_321_3,Allow police questioning of suspected undocumented
+2015,immigration,immig_employer,CC15_321_4,Sanction employers hiring undocumented
+2015,abortion,abortion_always,CC15_322a,Always allow abortion
+2015,abortion,abortion_conditional,CC15_322b,Allow abortion only under certain cases
+2015,abortion,abortion_20weeks,CC15_322c,Ban abortion after 20 weeks
+2015,abortion,abortion_coverage,CC15_322d,Employer coverage of abortion
+2015,abortion,abortion_expenditures,CC15_322e,Prohibit expenditures for abortion
+2015,abortion,abortion_prohibition,CC15_322f,Total prohibition of abortion
+2015,environment,enviro_carbon,CC15_323_1,Allow EPA to regulate carbon dioxide emissions
+2015,environment,enviro_35mpg,CC15_323_2,Raise fuel efficiency from 25 to 35 mpg
+2015,environment,enviro_renewable,CC15_323_3,Require states use a minimum amount of renewable fuels
+2015,environment,enviro_airwateracts,CC15_323_4,Strengthen EPA enforcement of Clean Air and Water acts
+2015,military,military_oil,CC15_324_1,Approve of military ensuring oil supply
+2015,military,military_terroristcamp,CC15_324_2,Approve of military to destroy terrorist camp
+2015,military,military_genocide,CC15_324_3,Approve of military to intervene in genocide or civil war
+2015,military,military_democracy,CC15_324_4,Approve of military to assist in spread democracy
+2015,military,military_protectallies,CC15_324_5,Approve of military to protect US allies under attack
+2015,military,military_helpun,CC15_324_6,Approve of military to help the United Nations uphold international law
+2015,other,gaymarriage,CC15_325,Opposition to gay marriage
+2015,other,repealaca,CC15_327A,Repeal the Affordable Care Act
+2015,spending,spending_vs_tax,CC15_331,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2015,other,incometax_vs_salestax,CC15_332,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2015,spending,spending_cuts_most,CC15_333a,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2015,spending,spending_cuts_least,CC15_333b,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2015,NA,case_id,V101,Respondent ID
+2015,immigration,immig_services,NA,Prohibit services to immigrants
+2015,abortion,abortion_scale,NA,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2015,environment,enviro_scale,NA,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2015,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2015,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2015,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2015,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2015,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2015,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2015,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2015,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2015,other,affirmativeaction,NA,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2015,environment,enviro_vs_jobs,NA,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2016,guns,guns_bgchecks,CC16_330a,Background checks for guns for all sales
+2016,guns,guns_names,CC16_330b,Prohibit state and local publishing gun owner names
+2016,guns,guns_assaultban,CC16_330d,Ban assault rifles
+2016,guns,guns_permits,CC16_330e,Ease ability to obtain concealed-carry permits
+2016,immigration,immig_legalize,CC16_331_1,Grant conditional legal status to undocumented
+2016,immigration,immig_border,CC16_331_2,Increase border security between US-Mexico
+2016,immigration,immig_employer,CC16_331_4,Sanction employers hiring undocumented
+2016,abortion,abortion_always,CC16_332a,Always allow abortion
+2016,abortion,abortion_conditional,CC16_332b,Allow abortion only under certain cases
+2016,abortion,abortion_20weeks,CC16_332c,Ban abortion after 20 weeks
+2016,abortion,abortion_coverage,CC16_332d,Employer coverage of abortion
+2016,abortion,abortion_expenditures,CC16_332e,Prohibit expenditures for abortion
+2016,abortion,abortion_prohibition,CC16_332f,Total prohibition of abortion
+2016,environment,enviro_carbon,CC16_333a,Allow EPA to regulate carbon dioxide emissions
+2016,environment,enviro_35mpg,CC16_333b,Raise fuel efficiency from 25 to 35 mpg
+2016,environment,enviro_renewable,CC16_333c,Require states use a minimum amount of renewable fuels
+2016,environment,enviro_airwateracts,CC16_333d,Strengthen EPA enforcement of Clean Air and Water acts
+2016,other,gaymarriage,CC16_335,Opposition to gay marriage
+2016,other,repealaca,CC16_351I,Repeal the Affordable Care Act
+2016,military,military_oil,CC16_414_1,Approve of military ensuring oil supply
+2016,military,military_terroristcamp,CC16_414_2,Approve of military to destroy terrorist camp
+2016,military,military_genocide,CC16_414_3,Approve of military to intervene in genocide or civil war
+2016,military,military_democracy,CC16_414_4,Approve of military to assist in spread democracy
+2016,military,military_protectallies,CC16_414_5,Approve of military to protect US allies under attack
+2016,military,military_helpun,CC16_414_6,Approve of military to help the United Nations uphold international law
+2016,spending,spending_vs_tax,CC16_415r,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2016,other,incometax_vs_salestax,CC16_416r,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2016,spending,spending_welfare,CC16_426_1,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2016,spending,spending_healthcare,CC16_426_2,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2016,spending,spending_education,CC16_426_3,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2016,spending,spending_police,CC16_426_4,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2016,spending,spending_infrastructure,CC16_426_5,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2016,NA,case_id,V101,Respondent ID
+2016,immigration,immig_police,NA,Allow police questioning of suspected undocumented
+2016,immigration,immig_services,NA,Prohibit services to immigrants
+2016,abortion,abortion_scale,NA,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2016,environment,enviro_scale,NA,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2016,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2016,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2016,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2016,other,affirmativeaction,NA,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2016,environment,enviro_vs_jobs,NA,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2016,spending,spending_cuts_most,NA,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2016,spending,spending_cuts_least,NA,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2017,guns,guns_bgchecks,CC17_330a,Background checks for guns for all sales
+2017,guns,guns_names,CC17_330b,Prohibit state and local publishing gun owner names
+2017,guns,guns_assaultban,CC17_330c,Ban assault rifles
+2017,guns,guns_permits,CC17_330d,Ease ability to obtain concealed-carry permits
+2017,immigration,immig_legalize,CC17_331_1,Grant conditional legal status to undocumented
+2017,immigration,immig_border,CC17_331_2,Increase border security between US-Mexico
+2017,immigration,immig_police,CC17_331_3,Allow police questioning of suspected undocumented
+2017,immigration,immig_employer,CC17_331_4,Sanction employers hiring undocumented
+2017,abortion,abortion_always,CC17_332a,Always allow abortion
+2017,abortion,abortion_conditional,CC17_332b,Allow abortion only under certain cases
+2017,abortion,abortion_20weeks,CC17_332c,Ban abortion after 20 weeks
+2017,abortion,abortion_coverage,CC17_332d,Employer coverage of abortion
+2017,abortion,abortion_expenditures,CC17_332e,Prohibit expenditures for abortion
+2017,abortion,abortion_prohibition,CC17_332f,Total prohibition of abortion
+2017,environment,enviro_carbon,CC17_333a,Allow EPA to regulate carbon dioxide emissions
+2017,environment,enviro_35mpg,CC17_333b,Raise fuel efficiency from 25 to 35 mpg
+2017,environment,enviro_renewable,CC17_333c,Require states use a minimum amount of renewable fuels
+2017,environment,enviro_airwateracts,CC17_333d,Strengthen EPA enforcement of Clean Air and Water acts
+2017,other,repealaca,CC17_340A,Repeal the Affordable Care Act
+2017,spending,spending_vs_tax,CC17_343,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2017,other,incometax_vs_salestax,CC17_344,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2017,spending,spending_cuts_most,CC17_345a,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2017,spending,spending_cuts_least,CC17_345b,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2017,NA,case_id,V101,Respondent ID
+2017,immigration,immig_services,NA,Prohibit services to immigrants
+2017,abortion,abortion_scale,NA,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2017,environment,enviro_scale,NA,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2017,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2017,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2017,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2017,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2017,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2017,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2017,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2017,other,gaymarriage,NA,Opposition to gay marriage
+2017,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2017,other,affirmativeaction,NA,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2017,military,military_oil,NA,Approve of military ensuring oil supply
+2017,military,military_terroristcamp,NA,Approve of military to destroy terrorist camp
+2017,military,military_genocide,NA,Approve of military to intervene in genocide or civil war
+2017,military,military_democracy,NA,Approve of military to assist in spread democracy
+2017,military,military_protectallies,NA,Approve of military to protect US allies under attack
+2017,military,military_helpun,NA,Approve of military to help the United Nations uphold international law
+2017,environment,enviro_vs_jobs,NA,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2018,NA,case_id,caseid,Respondent ID
+2018,guns,guns_bgchecks,CC18_320a,Background checks for guns for all sales
+2018,guns,guns_assaultban,CC18_320c,Ban assault rifles
+2018,guns,guns_permits,CC18_320d,Ease ability to obtain concealed-carry permits
+2018,abortion,abortion_always,CC18_321a,Always allow abortion
+2018,abortion,abortion_conditional,CC18_321b,Allow abortion only under certain cases
+2018,abortion,abortion_20weeks,CC18_321c,Ban abortion after 20 weeks
+2018,abortion,abortion_coverage,CC18_321d,Employer coverage of abortion
+2018,abortion,abortion_expenditures,CC18_321e,Prohibit expenditures for abortion
+2018,abortion,abortion_prohibition,CC18_321f,Total prohibition of abortion
+2018,immigration,immig_border,CC18_322a,Increase border security between US-Mexico
+2018,other,repealaca,CC18_327c,Repeal the Affordable Care Act
+2018,environment,enviro_carbon,CC18_415a,Allow EPA to regulate carbon dioxide emissions
+2018,environment,enviro_35mpg,CC18_415b,Raise fuel efficiency from 25 to 35 mpg
+2018,environment,enviro_renewable,CC18_415c,Require states use a minimum amount of renewable fuels
+2018,environment,enviro_airwateracts,CC18_415d,Strengthen EPA enforcement of Clean Air and Water acts
+2018,spending,spending_welfare,CC18_426_1,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2018,spending,spending_healthcare,CC18_426_2,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2018,spending,spending_education,CC18_426_3,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2018,spending,spending_police,CC18_426_4,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2018,spending,spending_infrastructure,CC18_426_5,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2018,immigration,immig_legalize,NA,Grant conditional legal status to undocumented
+2018,immigration,immig_police,NA,Allow police questioning of suspected undocumented
+2018,immigration,immig_employer,NA,Sanction employers hiring undocumented
+2018,immigration,immig_services,NA,Prohibit services to immigrants
+2018,abortion,abortion_scale,NA,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2018,environment,enviro_scale,NA,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2018,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2018,guns,guns_names,NA,Prohibit state and local publishing gun owner names
+2018,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2018,other,gaymarriage,NA,Opposition to gay marriage
+2018,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2018,other,affirmativeaction,NA,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2018,military,military_oil,NA,Approve of military ensuring oil supply
+2018,military,military_terroristcamp,NA,Approve of military to destroy terrorist camp
+2018,military,military_genocide,NA,Approve of military to intervene in genocide or civil war
+2018,military,military_democracy,NA,Approve of military to assist in spread democracy
+2018,military,military_protectallies,NA,Approve of military to protect US allies under attack
+2018,military,military_helpun,NA,Approve of military to help the United Nations uphold international law
+2018,spending,spending_vs_tax,NA,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2018,other,incometax_vs_salestax,NA,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2018,environment,enviro_vs_jobs,NA,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2018,spending,spending_cuts_most,NA,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2018,spending,spending_cuts_least,NA,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2019,NA,case_id,caseid,Respondent ID
+2019,guns,guns_bgchecks,CC19_320a,Background checks for guns for all sales
+2019,guns,guns_assaultban,CC19_320c,Ban assault rifles
+2019,guns,guns_permits,CC19_320d,Ease ability to obtain concealed-carry permits
+2019,abortion,abortion_always,CC19_321a,Always allow abortion
+2019,abortion,abortion_conditional,CC19_321b,Allow abortion only under certain cases
+2019,abortion,abortion_20weeks,CC19_321c,Ban abortion after 20 weeks
+2019,abortion,abortion_expenditures,CC19_321d,Prohibit expenditures for abortion
+2019,abortion,abortion_prohibition,CC19_321e,Total prohibition of abortion
+2019,immigration,immig_legalize,CC19_322d,Grant conditional legal status to undocumented
+2019,immigration,immig_border,CC19_322e,Increase border security between US-Mexico
+2019,other,repealaca,CC19_327d,Repeal the Affordable Care Act
+2019,environment,enviro_carbon,CC19_340a,Allow EPA to regulate carbon dioxide emissions
+2019,environment,enviro_renewable,CC19_340b,Require states use a minimum amount of renewable fuels
+2019,environment,enviro_airwateracts,CC19_340c,Strengthen EPA enforcement of Clean Air and Water acts
+2019,immigration,immig_police,NA,Allow police questioning of suspected undocumented
+2019,immigration,immig_employer,NA,Sanction employers hiring undocumented
+2019,immigration,immig_services,NA,Prohibit services to immigrants
+2019,abortion,abortion_scale,NA,"Support scale for access to abortion (1 = Never permit, 4 = Always allow)"
+2019,abortion,abortion_coverage,NA,Employer coverage of abortion
+2019,environment,enviro_scale,NA,"Opposition scale to climate change (1 = serious problem, 5 = not occuring)"
+2019,environment,enviro_35mpg,NA,Raise fuel efficiency from 25 to 35 mpg
+2019,guns,guns_scale,NA,"Restriction scale on gun sales (1 = More strict, 2 = Less strict, 3 = Same)"
+2019,guns,guns_names,NA,Prohibit state and local publishing gun owner names
+2019,spending,spending_welfare,NA,"Spending preferences on welfare (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2019,spending,spending_healthcare,NA,"Spending preferences on health care (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2019,spending,spending_education,NA,"Spending preferences on education (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2019,spending,spending_police,NA,"Spending preferences on law enforcement (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2019,spending,spending_infrastructure,NA,"Spending preferences on transportation/infrastructure (1 = Increase, 3 = Maintain, 5 = Decrease)"
+2019,other,gaymarriage_scale,NA,"Opposition scale to gay marriage (1=Strongly support, 4=Strongly oppose)"
+2019,other,gaymarriage,NA,Opposition to gay marriage
+2019,other,affirmativeaction_scale,NA,"Opposition scale to affirmative action (1 = Strongly support, 7 = Strongly oppose)"
+2019,other,affirmativeaction,NA,"Opposition to affirmative action (1 = Support, 4 = Oppose)"
+2019,military,military_oil,NA,Approve of military ensuring oil supply
+2019,military,military_terroristcamp,NA,Approve of military to destroy terrorist camp
+2019,military,military_genocide,NA,Approve of military to intervene in genocide or civil war
+2019,military,military_democracy,NA,Approve of military to assist in spread democracy
+2019,military,military_protectallies,NA,Approve of military to protect US allies under attack
+2019,military,military_helpun,NA,Approve of military to help the United Nations uphold international law
+2019,spending,spending_vs_tax,NA,"Preference scale from 0 (increasing taxes) to 100 (spending cuts on education, health care, welfare and construction)"
+2019,other,incometax_vs_salestax,NA,Preference scale from 0 (increase income tax) to 100 (increase sales tax)
+2019,environment,enviro_vs_jobs,NA,"Preference scale between environmental protection and job availability (1=Environmental protection, 5=Job protection)"
+2019,spending,spending_cuts_most,NA,"Most preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"
+2019,spending,spending_cuts_least,NA,"Least preferred spending cut option (1=Defense, 2=Domestic, 3=Raise taxes)"

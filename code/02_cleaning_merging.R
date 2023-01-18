@@ -43,7 +43,7 @@ paths <- c(
   "2007/Data/Commmon/CCES0043_OUTPUT.sav",
   "2008/Data/cces_2008_common.dta",
   "2009/Data/COMMON/cces09_cmn_output.dta",
-  "2010/Data/CCES10_Common_OUTPUT.dta",
+  "2010/Data/cces10_common_output_vv.dta",
   "2011/Common/CCES11_Common_OUTPUT.dta",
   "2012/Data/Common_Content/CCES12_Common_OUTPUT_vv_20130930.dta",
   "2013/Data/CCES13_Common_OUTPUT.dta",

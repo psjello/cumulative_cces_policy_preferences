@@ -52,32 +52,31 @@ theme_plot <- function () {
 }
 theme_set(theme_plot())
 
-wd <- "D:/Dropbox/CCES_SDA/"
-
 knitr::opts_chunk$set(echo = FALSE, comment = "", warning = FALSE)
 ```
 
 
 ```{r, include = FALSE, cache = FALSE}
+setwd("D:/Dropbox/CCES_SDA/Cumulative Policy/cumulative_cces_policy_preferences/")
 
 #Cumulative preferences
-ces <- read_dta(paste0(wd, "Cumulative Policy/cumulative_ces_policy_preferences.dta"))
+ces <- read_dta("cumulative_ces_policy_preferences.dta")
 ces <- sjlabelled::as_label(ces)
 
 # Crosswalks
 wide_guide <- 
   read.csv(
-    paste0(wd, "Cumulative Policy/output/latex-guide_preferences-crosswalk_wide-sanswording.csv"),
+    "output/latex-guide_preferences-crosswalk_wide-sanswording.csv",
     stringsAsFactors=F)
 
 wide <- 
   read.csv(
-    paste0(wd, "Cumulative Policy/output/preferences-crosswalk_wide-withwording.csv"),
+    "output/preferences-crosswalk_wide-withwording.csv",
     stringsAsFactors=F)
 
 long <- 
   read.csv(
-    paste0(wd, "Cumulative Policy/output/preferences-crosswalk_long-withwording.csv"),
+    "output/preferences-crosswalk_long-withwording.csv",
     stringsAsFactors=F)
 
 ```
